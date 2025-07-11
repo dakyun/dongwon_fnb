@@ -566,13 +566,13 @@
             cursor: default !important;
         }
         .brand_box_wrap{
-              display:flex;
-              .brand_box{
-                  width:280px !important;
-                  height:280px;
-                  border-radius:50%;
-                  overflow:hidden;
-                  &::before{
+            display:flex;
+            .brand_box{
+                width:280px !important;
+                height:280px;
+                border-radius:50%;
+                overflow:hidden;
+                &::before{
                     content:'';
                     display:block;
                     position:absolute;
@@ -582,23 +582,13 @@
                     right:0;
                     background:#00000099;
                     transition:all .2s ease-in-out;
-                  }
-                  .logo{
-                      top:50%;
-                      transform:translate(-50%,-50%);
-                    }
+                }
+                .logo{
+                    top:50%;
+                    transform:translate(-50%,-50%);
                 }
             }
         }
-        .circle-slider {
-          display: flex;
-          width: max-content;
-          animation: scroll-left 70s linear infinite;
-      
-          &:hover {
-            animation-play-state: paused;
-          }
-      
     }
 }
 @media (min-width : 768px){

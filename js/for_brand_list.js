@@ -35,39 +35,32 @@ $(document).ready(function(){
 
     $(window).on('scroll', function () {
         let scrollTop = $(window).scrollTop();
-        let firstSectionTop = part.eq(0).offset().top;
 
-        // nav fixed 처리
-        if (scrollTop + 5 >= firstSectionTop) {
-            $(".nav").addClass("fixed");
-        } else {
-            $(".nav").removeClass("fixed");
-            $(".nav a").removeClass("active");
-        }
-
-        // 최상단이면 active 제거
+        // ✅ 스크롤 최상단이면 fixed 해제 + active 제거
         if (scrollTop <= 10) {
+            $(".nav").removeClass("fixed");
             $(".nav a").removeClass("active");
             return;
         }
+
+        // ✅ 그 외엔 무조건 fixed 유지
+        $(".nav").addClass("fixed");
 
         // 섹션 별 active 처리
         part.each(function (i) {
             if (scrollTop >= part.eq(i).offset().top - 200) {
                 const $currentNav = $(".nav a").eq(i);
 
-                // 이미 active면 중복 처리 X
                 if (!$currentNav.hasClass("active")) {
                     $(".nav a").removeClass("active");
                     $currentNav.addClass("active");
 
-                    // ✅ 모바일에서 스크롤시 자동 포커싱
                     if (window.innerWidth <= 768) {
                         const container = document.querySelector(".nav .inner");
                         const link = $currentNav.get(0);
 
                         container.scrollTo({
-                            left: link.offsetLeft - 16, // 여백 보정
+                            left: link.offsetLeft - 16,
                             behavior: "smooth"
                         });
                     }
@@ -79,33 +72,50 @@ $(document).ready(function(){
 
     $(".nav a").on("click", function (e) {
         e.preventDefault();
-
+    
         const $this = $(this);
         const target = $($this.attr("href"));
-
-        // 1. active 처리
+    
+        // active 처리
         $(".nav a").removeClass("active");
         $this.addClass("active");
-
-        // 2. 모바일일 경우 먼저 포커싱 처리
+    
+        // 모바일 포커싱 처리
         if (window.innerWidth <= 768) {
             const container = document.querySelector(".nav .inner");
             const link = this;
-
+    
             container.scrollTo({
                 left: link.offsetLeft - 16,
                 behavior: "smooth"
             });
         }
-
-        // 3. 살짝 지연 후 스크롤 이동
+    
+        // ✅ 먼저 강제로 fixed 붙여놓기
+        $(".nav").addClass("fixed");
+    
+        // 보정 위치 계산
+        let offsetTop = target.offset().top;
+    
+        if (window.innerWidth <= 768) {
+            const navHeight = $(".nav").outerHeight() || 0;
+            const headerHeight = $("#Header").outerHeight() || 0;
+            offsetTop -= (navHeight + headerHeight - 20);
+        } else {
+            const navHeight = $(".nav").outerHeight() || 0;
+            offsetTop -= (navHeight);
+        }
+    
+        // 스크롤 이동
         setTimeout(() => {
             $("html, body").animate(
-                { scrollTop: target.offset().top },
+                {
+                    scrollTop: offsetTop
+                },
                 300
             );
-        }, 100); // ← 살짝 딜레이 줘서 겹침 방지
-    });
+        }, 100);
+    });    
 
 });
 $(function () {

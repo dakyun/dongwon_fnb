@@ -87,7 +87,7 @@
 .nav .inner a > span {
   display: block;
   letter-spacing: 0;
-  font-size: 18pxpx;
+  font-size: 18px;
   font-weight: 400;
   color: #222;
   text-align: center;
@@ -100,11 +100,6 @@
 .nav .inner a.active > span {
   color: #0079C1;
   z-index: 30;
-}
-.nav .inner a:hover span {
-  color: #0079C1;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 
 .brand_box_wrap.dongwon {
@@ -150,6 +145,13 @@
   display: none;
 }
 
+@media (min-width: 768px) {
+  .nav .inner a:hover span {
+    color: #0079C1;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+}
 @media (max-width: 768px) {
   #Container .contents_header h2 {
     margin: 10.4166666667vw auto 4.1666666667vw;
@@ -170,7 +172,7 @@
   }
   .nav.fixed {
     position: fixed;
-    top: 16.9270833333vw;
+    top: 20.8333333333vw;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -184,7 +186,7 @@
     -webkit-column-gap: 1.3020833333vw;
        -moz-column-gap: 1.3020833333vw;
             column-gap: 1.3020833333vw;
-    padding: 0 2.6041666667vw;
+    padding: 0.5208333333vw 2.6041666667vw;
     width: 100%;
     overflow-x: auto;
     scrollbar-width: none;
@@ -215,7 +217,7 @@
     margin-top: 7.8125vw;
   }
   .section {
-    padding-top: 10.4166666667vw;
+    padding-top: 13.0208333333vw;
     overflow: hidden;
     margin-bottom: 0;
   }

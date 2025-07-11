@@ -1288,20 +1288,6 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-#brandRoll .circle-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  -webkit-animation: scroll-left 70s linear infinite;
-          animation: scroll-left 70s linear infinite;
-}
-#brandRoll .circle-slider:hover {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-}
 
 @media (min-width: 768px) {
   #section5 .product_boxs .box:hover .photo img {
@@ -1682,23 +1668,17 @@
     margin-top: 1.3020833333vw;
     letter-spacing: -0.6px;
   }
-  #section5 .product_boxs .box:hover {
-    all: unset;
+  #brandRoll .marquee {
+    margin: 7.8125vw 0 13.0208333333vw;
   }
-  #brandRoll .circle-slider-wrap {
-    padding: 7.8125vw 0 13.0208333333vw;
+  #brandRoll .marquee .marquee-track {
+    gap: 3.90625vw;
   }
-  #brandRoll .circle-slider-wrap .swiper-wrapper {
-    gap: unset;
-  }
-  #brandRoll .circle-slider-wrap .brand_box_wrap {
-    gap: unset;
-  }
-  #brandRoll .circle-slider-wrap .brand_box_wrap .brand_box {
+  #brandRoll .marquee .brand_box_wrap .brand_box {
     width: 36.4583333333vw !important;
     height: 36.4583333333vw;
   }
-  #brandRoll .circle-slider-wrap .brand_box_wrap .brand_box:nth-of-type(1) {
+  #brandRoll .marquee .brand_box_wrap .brand_box:nth-of-type(1) {
     margin-left: 6.25vw;
   }
 }

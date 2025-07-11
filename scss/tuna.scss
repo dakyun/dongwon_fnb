@@ -398,7 +398,7 @@
             justify-content:center;
             align-items:center;
             position:relative;
-            cursor: pointer;
+            cursor: default;
             &::before{
                 content:'';
                 display:block;
@@ -435,7 +435,7 @@
                 position:absolute;
                 transition:all .2s ease;
             }
-            &:hover{
+            &.flip{
                 transition-delay:unset;
                 transition:unset;
                 strong{

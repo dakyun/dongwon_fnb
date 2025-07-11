@@ -330,28 +330,24 @@
                 margin-top:px(10);
                 letter-spacing:-0.6px;
             }
-            &:hover{
-                all:unset;
-            }
         }
     }
 }
-#brandRoll{
-    .circle-slider-wrap {
-        padding: px(60) 0 px(100);
-        .swiper-wrapper {
-          gap:unset;
-        }
-        .brand_box_wrap{
-              gap:unset;
-              .brand_box{
-                  width:px(280) !important;
-                  height:px(280);
-                  &:nth-of-type(1){
-                    margin-left:px(48);
-                  }
-              }
-        }
-    }
-}
+  #brandRoll{
+    .marquee {
+      margin:px(60) 0 px(100);
+      .marquee-track{
+          gap:px(30);
+      }
+          .brand_box_wrap{
+                .brand_box{
+                    width:px(280) !important;
+                    height:px(280);
+                    &:nth-of-type(1){
+                      margin-left:px(48);
+                    }
+                }
+          }
+      }
+  }
 }

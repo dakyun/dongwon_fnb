@@ -1036,7 +1036,7 @@
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  cursor: pointer;
+  cursor: default;
 }
 #section4 .up_boxs .box::before {
   content: "";
@@ -1536,12 +1536,12 @@
   }
   #section5 .pr_list {
     gap: 3.90625vw;
-    width: 92.1875vw;
+    width: 90.3645833333vw;
     margin: 7.8125vw auto;
   }
   #section5 .pr_list .box {
-    width: 28.125vw;
-    height: 28.125vw;
+    width: 27.34375vw;
+    height: 27.34375vw;
     position: relative;
     overflow: hidden;
   }
