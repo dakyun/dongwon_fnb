@@ -1,0 +1,215 @@
+@import './mixin';
+// #Container *{
+//   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+// }
+#Container.container_brand{
+  background:unset;
+}
+#Container .contents_header{
+  height:auto;
+}
+#Footer_Wrap{
+  position:unset;
+}
+#Container.container_brand{
+  padding-bottom:50px;
+}
+#Container .contents_header{
+  h2{
+    margin:60px auto 20px;
+    @include font(40,600,#333,center);
+  }
+}
+.inner{
+  width:1200px;
+  margin:0 auto;
+  height:100%;
+}
+/* 고정 탭바 */
+.nav {
+  width: 100%;
+  background:#ffffff;
+  padding:20px 0;
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 99;
+    display: block;
+    opacity: 1;
+    box-shadow:4px 6px 10px #00000010;
+  }
+
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    column-gap:20px;
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+
+    a {
+      width: auto;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      text-decoration: none !important;
+      padding:8px 22px;
+      box-sizing:border-box;
+      border:1px solid #CCCCCC;
+      border-radius:30px;
+      > span {
+        display: block;
+        letter-spacing: 0;
+        @include font(18px,400,#222,center);
+        transition:all .2s ease-in-out;
+      }
+
+      &.active {
+        border-color:#0079C1;
+        > span {
+          color: #0079C1;
+          z-index: 30;
+        }
+      }
+
+      &:hover {
+        span {
+          color:#0079C1;
+          transition:all .2s ease-in-out;
+        }
+      }
+    }
+  }
+}
+.brand_box_wrap.dongwon{
+  margin-top:60px;
+}
+.section{
+  padding-top:80px;
+  h3{
+    margin-bottom:30px;
+    @include font(32,600,#222);
+    letter-spacing:-.8px;
+    line-height:1;
+    span{
+      @include font(20,400,#444444);
+      display:inline-block;
+      margin-left:14px;
+    }
+  }
+  .brand_box_wrap{
+    width:1200px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:32px;
+  }
+}
+.bn_btn{
+  display:block;
+  width:1200px;
+  margin:0 auto 50px;
+  &.mobile{
+    display:none;
+  }
+}
+
+@media (max-width: 768px) {
+  #Container .contents_header{
+    h2{
+      margin:px(80) auto px(32);
+      @include fontmobile(60,600,#333,center);
+    }
+  }
+  .inner{
+    width:100%;
+    padding:0 px(48);
+  }
+  .nav {
+    width: 100%;
+    background:#ffffff;
+    padding:px(20) 0;
+    &.fixed {
+      position: fixed;
+      top: px(130);
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      z-index: 300;
+      display: block;
+      opacity: 1;
+      box-shadow:1px 1px 1px #00000019;
+    }
+  
+    .inner {
+      column-gap:px(10);
+      padding:0 px(20);
+      width:100%;
+      overflow-x:auto;
+      scrollbar-width: none;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      justify-content:flex-start;
+      a {
+        flex: 0 0 auto;
+        padding:px(12) px(36);
+        > span {
+          @include fontmobile(28,400,#222,center);
+        }
+        &:hover {
+          span {
+            color:unset;
+            transition:unset;
+          }
+        }
+        &.active {
+          > span {
+            color: #0079C1;
+            z-index: 30;
+          }
+        }
+      }
+    }
+  }
+  .brand_box_wrap.dongwon{
+    margin-top:px(60);
+  }
+  .section{
+    padding-top:px(80);
+    overflow:hidden;
+    margin-bottom:0;
+    h3{
+      margin-bottom:px(32);
+      @include fontmobile(40,500,#222);
+      span{
+        all:unset;
+        @include fontmobile(28,400,#444444);
+        display:block;
+      }
+    }
+    .brand_box_wrap{
+      width:100%;
+      gap:px(36);
+    }
+  }
+  #Container.container_brand{
+    padding-bottom:px(80);
+  }
+  .bn_btn{
+    display:none;
+    &.mobile{
+      display:block;
+      width:100%;
+      text-align:center;
+
+      img{
+        width:px(672);
+      }
+    }
+  }
+}

@@ -1,0 +1,920 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>Re_동원F&amp;B</title>
+<meta name="Keywords" content="동원F&B">
+<meta name="Description" content="동원F&B 메인 페이지">
+<!-- <link rel="stylesheet" href="https://www.dongwonfnb.com/Common/CSS/Base.css" type="text/css"> -->
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="https://www.dongwonfnb.com/Common/CSS/UI_Style.css?vers_20210503_1" type="text/css">
+<link rel="stylesheet" href="https://www.dongwonfnb.com/Common/CSS/jquery.bxslider.css" type="text/css">
+<link rel="stylesheet" href="https://www.dongwonfnb.com/Common/CSS/Common.css" type="text/css">
+<link rel="stylesheet" href="https://www.dongwonfnb.com/Common/CSS/Layout.css" type="text/css">
+<link rel="stylesheet" href="https://www.dongwonfnb.com/Common/CSS/Content.css?vers_20210511_1" type="text/css">
+<link rel="shortcut icon" type="image/x-icon" href="https://www.dongwonfnb.com/Imageshttps://www.dongwonfnb.com/Common/favicon.ico?v=2">
+<script type="text/javascript" src="https://www.dongwonfnb.com/Common/JS/jquery-1.11.2.js"></script>
+<script type="text/javascript" src="https://www.dongwonfnb.com/Common/JS/jquery-ui-1.11.4.js"></script>
+<script type="text/javascript" src="https://www.dongwonfnb.com/Common/JS/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="https://www.dongwonfnb.com/Common/JS/jquery.colorbox.js"></script>
+<script type="text/javascript" src="https://www.dongwonfnb.com/Common/JS/jquery.bxslider.js"></script>
+<script type="text/javascript" src="https://www.dongwonfnb.com/Common/JS/isotope.pkgd.js"></script>
+<script type="text/javascript" src="https://www.dongwonfnb.com/Common/JS/perfect-scrollbar.js"></script>
+<script type="text/javascript" src="https://www.dongwonfnb.com/Common/JS/common.js"></script>
+<script type="text/javascript" src="https://www.dongwonfnb.com/Common/JS/jquery.placeholder.js"></script>
+
+<script type="text/javascript" src="https://www.dongwonfnb.com/js/date.format.js"></script>
+<script type="text/javascript" src="https://www.dongwonfnb.com/js/datepicker.kr.js"></script>
+<script type="text/javascript" src="https://www.dongwonfnb.com/js/jquery.cookies.2.2.0.min.js"></script>
+<script type="text/javascript" src="https://www.dongwonfnb.com/js/comm.js"></script>
+<script type="text/javascript" src="https://www.dongwonfnb.com/js/jquery.linkselect.js"></script>
+<script type="text/javascript" src="https://www.dongwonfnb.com/js/rollover.js"></script>
+<script type="text/javascript" src="https://www.dongwonfnb.com/js/jquery.form.js"></script>
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/Common/JS/html5shiv-printshiv.js"></script>
+<![endif]-->
+
+<!-- <style>
+    #Header .lnb_wrap_pc .lnb li.node1 .submenu_wrap.sub01{display:block !important;}
+</style> -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+	<div id="Wrap" class="main">
+		<!-- SkipMenu -->
+				
+		<div id="SkipMenu" tabindex="0">
+			<nav class="skipNav">
+				<ul>
+					<li><a href="#Container">본문 바로가기</a></li>
+				</ul>
+<!--			<div class="skipClose"><a href="#Logo" title="본문바로가기메뉴 닫기" class="ico"><span class="ico ico_close txtNone">Close</span></a></div> -->
+			</nav>			
+		</div>
+		<!--// SkipMenu -->
+		<hr>
+
+		<!-- Header Wrap -->
+<div id="Header_Wrap">
+    <!-- Header -->
+    <header id="Header">
+        <form name="categoryFrm" id="categoryFrm" method="post" onSubmit="">
+            <input type="hidden" id="categoryD1" name="categoryD1">
+            <input type="hidden" id="categoryD1No" name="categoryD1No">
+            <input type="hidden" id="language" name="language" value="ko">
+        </form>
+        <div class="logo_header"><a href="/services/index" title="메인페이지로 이동" id="Logo"><img src="https://www.dongwonfnb.com/Images/Common/logo_header.png" alt="Dongwon 동원F&B"></a></div>
+        <div class="header_nav_wrap">
+            <!-- GNB -->
+            <div class="gnb">
+                <!-- Top Search -->
+                <div class="topSearch">
+                    <form name="TopSearchFrm" id="TopSearchFrm" action="/services/Etc/Search_Product">
+                        <input type="text" name="topKeyword" id="topKeyword" maxlength="50" title="검색어 입력" class="input_topSearch">
+                        <button type="submit" class="btn btn_topSearch"><span>검색</span></button>
+                    </form>
+                </div>
+                <!--// Top Search -->
+                <!-- Site Language -->
+                <div class="selectBox siteLang">
+                    <div class="selectVal" tabindex="0"><a title="언어를 선택할 수 있습니다" href="#this" tabindex="-1">KOR</a></div>
+                    <ul class="selectMenu">
+                        <li><a href="/services/EN/index" title="영문 페이지로 이동">ENG</a></li>
+                        <li><a href="/services/JP/index" title="일문 페이지로 이동">JPN</a></li>
+                        <li><a href="/services/CN/index" title="중문 페이지로 이동">CHN</a></li>
+                    </ul>
+                </div>
+                <!--// Site Language -->
+                <a href="#" class="btn btn_allMenuOpen"><span>전체메뉴펼침</span></a>
+            </div>
+            <!--// GNB -->
+            <!-- pc LNB -->
+            <nav class="lnb_wrap_pc">
+                <ul class="lnb">
+                	<li class="node1"><a href="/services/Company/Company" class="depth1"><span>회사소개</span></a>
+                        <div class="submenu_wrap sub05">
+                            <ul class="submenu">
+                                <li class="node2"><a href="/services/Company/Company" class="depth2"><span>한눈에 보는 동원 F&amp;B</span></a></li>
+                                <li class="node2"><a href="/services/Company/Greeting" class="depth2"><span>CEO 인사말</span></a></li>
+                                <li class="node2"><a href="/services/Company/CI" class="depth2"><span>CI 소개</span></a></li>
+                                <li class="node2"><a href="/services/Company/Vision" class="depth2"><span>비전과 가치체계</span></a></li>
+                                <li class="node2"><a href="/services/Company/History" class="depth2"><span>기업연혁</span></a></li>
+                                <li class="node2"><a href="/services/Company/Sustainable_Manage01" class="depth2"><span>지속가능경영</span></a></li>
+                                <li class="node2"><a href="/services/Company/ethical_management" class="depth2"><span>윤리·정도경영</span></a></li>
+                                <li class="node2"><a href="/services/Company/human_rights_management" class="depth2"><span>인권경영</span></a></li>
+                                <li class="node2"><a href="/services/Company/Growing_Greeting" class="depth2"><span>동반성장제도</span></a></li>
+                                <li class="node2"><a href="/services/Company/Businesses" class="depth2"><span>사업장 소개</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="node1">
+                        <a href="/brand_list.html" class="depth1"><span>브랜드소개</span></a>
+                        <div class="submenu_wrap sub01">
+                          <ul class="submenu">
+                            <li class="depth2 on">
+                              <a href="/services/Brand/Brand_List?cat=OceanHarvest" >
+                                Ocean Harvest<br><span>바다에서 온 건강</span>
+                              </a>
+                              <ul class="depth3">
+                                <li><a href=""><span>동원참치</span></a></li>
+                                <li><a href=""><span>바른어묵</span></a></li>
+                                <li><a href=""><span>The King</span></a></li>
+                              </ul>
+                            </li>
+                            <li class="depth2">
+                              <a href="/services/Brand/Brand_List?cat=LandHarvest">
+                                Land Harvest<br><span>자연에서 온 건강</span>
+                              </a>
+                              <ul class="depth3">
+                                <li><a href=""><span>양반</span></a></li>
+                                <li><a href=""><span>덴마크</span></a></li>
+                                <li><a href=""><span>소와나무</span></a></li>
+                                <li><a href=""><span>퀴진</span></a></li>
+                                <li><a href=""><span>리챔</span></a></li>
+                                <li><a href=""><span>딤섬</span></a></li>
+                                <li><a href=""><span>개성</span></a></li>
+                                <li><a href=""><span>그릴리</span></a></li>
+                                <li><a href=""><span>저스트</span></a></li>
+                                <li><a href=""><span>하루미</span></a></li>
+                                <li><a href=""><span>상상</span></a></li>
+                                <li><a href=""><span>더반찬&</span></a></li>
+                              </ul>
+                            </li>
+                            <li class="depth2">
+                              <a href="/services/Brand/Brand_List?cat=HealthyHarvest">
+                                Healthy Harvest<br><span>활력을 주는 건강</span>
+                              </a>
+                              <ul class="depth3">
+                                <li><a href=""><span>GNC</span></a></li>
+                                <li><a href=""><span>천지인</span></a></li>
+                                <li><a href=""><span>BEAUTICK</span></a></li>
+                                <li><a href=""><span>NUTRI PLAN</span></a></li>
+                              </ul>
+                            </li>
+                            <li class="depth2">
+                              <a href="/services/Brand/Brand_List?cat=BeverageHarvest">
+                                Beverage Harvest<br><span>매일 마시는 건강</span>
+                              </a>
+                              <ul class="depth3">
+                                <li><a href=""><span>보성녹차</span></a></li>
+                                <li><a href=""><span>보성홍차</span></a></li>
+                                <li><a href=""><span>동원샘물</span></a></li>
+                                <li><a href=""><span>A'live</span></a></li>
+                                <li><a href=""><span>쿨피스</span></a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                    </li>
+                      
+                    <li class="node1"><a href="/services/Product/Product_List" class="depth1"><span>제품안내</span></a>
+                    </li>
+                    
+                    <li class="node1">
+                    	<a href="/services/Social/Social_List" class="depth1"><span>소셜라이브</span></a>
+                        
+                    </li>
+                   
+                    <li class="node1"><a href="/services/Invest/Finance" class="depth1"><span>투자정보</span></a>
+                        <div class="submenu_wrap sub06">
+                            <ul class="submenu">
+                                <li class="node2"><a href="/services/Invest/Finance" class="depth2"><span>재무정보</span></a></li>
+                                <li class="node2"><a href="/services/Invest/Stock" class="depth2"><span>주식정보</span></a></li>
+                                <li class="node2"><a href="/services/Invest/Disclosure" class="depth2"><span>공시정보</span></a></li>
+                                <li class="node2"><a href="/services/Invest/Bulletin" class="depth2"><span>전자공고</span></a></li>
+                                <li class="node2"><a href="/services/Invest/IR" class="depth2"><span>IR공고</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="node1"><a href="/services/Customer/Customer" class="depth1"><span>고객센터</span></a>
+                        <div class="submenu_wrap sub07">
+                            <ul class="list" id="board"></ul>
+                            <ul class="submenu" style="width:110px; float:right;">
+                                <li class="node2"><a href="/services/Customer/Customer" class="depth2"><span>고객센터 이용안내</span></a></li>
+                                <li class="node2"><a href="/services/Customer/News/News_List" class="depth2"><span>뉴스 &amp; 공지사항</span></a></li>
+                                <li class="node2"><a href="/services/Customer/Faq/Faq_List" class="depth2"><span>자주찾는질문</span></a></li>
+                                <li class="node2"><a href="/services/Customer/QnA/QnA_Main" class="depth2"><span>고객의 소리</span></a></li>
+                                
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <!--// pc LNB -->
+            <!-- mobile LNB -->
+            <nav class="lnb_wrap">
+                <ul class="lnb">
+                	<li class="node1"><a href="/services/Company/Company" class="depth1"><span>회사소개</span></a>
+                        <div class="submenu_wrap sub05">
+                            <ul class="submenu">
+                                <li class="node2"><a href="/services/Company/Company" class="depth2"><span>한눈에 보는 동원 F&amp;B</span></a></li>
+                                <li class="node2"><a href="/services/Company/Greeting" class="depth2"><span>CEO 인사말</span></a></li>
+                                <li class="node2"><a href="/services/Company/CI" class="depth2"><span>CI 소개</span></a></li>
+                                <li class="node2"><a href="/services/Company/Vision" class="depth2"><span>비전과 가치체계</span></a></li>
+                                <li class="node2"><a href="/services/Company/History" class="depth2"><span>기업연혁</span></a></li>
+                                <li class="node2"><a href="/services/Company/Sustainable_Manage01" class="depth2"><span>지속가능경영</span></a></li>
+                                <li class="node2"><a href="/services/Company/ethical_management" class="depth2"><span>윤리·정도경영</span></a></li>
+                                <li class="node2"><a href="/services/Company/human_rights_management" class="depth2"><span>인권경영</span></a></li>
+                                <li class="node2"><a href="/services/Company/Growing_Greeting" class="depth2"><span>동반성장제도</span></a></li>
+                                <li class="node2"><a href="/services/Company/Businesses" class="depth2"><span>사업장 소개</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="node1"><a href="/services/Brand/Brand_List" class="depth1"><span>브랜드소개</span></a>
+                        <div class="submenu_wrap sub01">
+                            <ul class="submenu">
+                            <li class="node2"><a href="/services/Brand/Brand_View?brandno=30" class="depth2">동원</a></li>
+                                 <li class="node2"><a href="/services/Brand/Brand_View?brandno=95" class="depth2">동원참치</a></li>
+                                <li class="node2"><a href="/services/Brand/Brand_View?brandno=32" class="depth2">리챔</a></li>
+                                <li class="node2"><a href="/services/Brand/Brand_View?brandno=31" class="depth2">양반</a></li>
+                                <li class="node2"><a href="/services/Brand/Brand_View?brandno=98" class="depth2">그릴리</a></li>
+                                <li class="node2"><a href="/services/Brand/Brand_View?brandno=100" class="depth2">퀴진</a></li>
+                                <li class="node2"><a href="/services/Brand/Brand_View?brandno=36" class="depth2">개성</a></li>
+                                <li class="node2"><a href="/services/Brand/Brand_View?brandno=41" class="depth2">쎈쿡</a></li>
+                                <li class="node2"><a href="/services/Brand/Brand_View?brandno=103" class="depth2">떡복이의 신</a></li>
+                                <li class="node2"><a href="/services/Brand/Brand_View?brandno=37" class="depth2">리얼크랩스</a></li>
+                                <li class="node2"><a href="/services/Brand/Brand_View?brandno=33" class="depth2">덴마트 밀크</a></li>
+                                <li class="node2"><a href="/services/Brand/Brand_View?brandno=34" class="depth2">소와 나무</a></li>
+                                <li class="node2"><a href="/services/Brand/Brand_View?brandno=97" class="depth2">동원샘물</a></li>
+                                <li class="node2"><a href="/services/Brand/Brand_View?brandno=40" class="depth2">보성녹차</a></li>
+                                <li class="node2"><a href="/services/Brand/Brand_View?brandno=43" class="depth2">보성홍차아이스티</a></li>
+                                <li class="node2"><a href="/services/Brand/Brand_View?brandno=44" class="depth2">뉴트리플랜</a></li>
+                                <li class="node2"><a href="/services/Brand/Brand_View?brandno=45" class="depth2">GNC</a></li>
+                                <li class="node2"><a href="/services/Brand/Brand_View?brandno=46" class="depth2">천지인</a></li>
+                                <li class="node2"><a href="/services/Brand/Brand_View?brandno=108" class="depth2">올리닉</a></li>
+                                 
+                                
+                                
+                                
+                                
+                                </ul>
+                        </div>
+                    </li>
+                    <li class="node1"><a href="/services/Product/Product_List" class="depth1"><span>제품안내</span></a>
+                        <div class="submenu_wrap sub02">
+                            <ul class="submenu">
+                                <li class="node2"><a href="/services/Product/Product_List" class="depth2"><span>제품안내</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="node1">
+                    	<a href="/services/Social/Social_List" class="depth1 social"><span>소셜라이브</span></a>
+ 						
+                    </li>
+                    <li class="node1"><a href="/services/Invest/Finance" class="depth1"><span>투자정보</span></a>
+                        <div class="submenu_wrap sub06">
+                            <ul class="submenu">
+                                <li class="node2"><a href="/services/Invest/Finance" class="depth2"><span>재무정보</span></a></li>
+                                <li class="node2"><a href="/services/Invest/Stock" class="depth2"><span>주식정보</span></a></li>
+                                <li class="node2"><a href="/services/Invest/Disclosure" class="depth2"><span>공시정보</span></a></li>
+                                <li class="node2"><a href="/services/Invest/Bulletin" class="depth2"><span>전자공고</span></a></li>
+                                <!-- <li class="node2"><a href="/services/Invest/IR" class="depth2"><span>IR공고</span></a></li> -->
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="node1"><a href="/services/Customer/Customer" class="depth1"><span>고객센터</span></a>
+                        <div class="submenu_wrap sub06">
+                            <ul class="submenu">
+                                <li class="node2"><a href="/services/Customer/Customer" class="depth2"><span>고객센터 이용안내</span></a></li>
+                                <li class="node2"><a href="/services/Customer/News/News_List" class="depth2"><span>뉴스 &amp; 공지사항</span></a></li>
+                                <li class="node2"><a href="/services/Customer/Faq/Faq_List" class="depth2"><span>자주찾는질문</span></a></li>
+                                <li class="node2"><a href="/services/Customer/QnA/QnA_Main" class="depth2"><span>고객의 소리</span></a></li>
+                                
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <!--// mobile LNB -->
+        </div>
+        <a href="#" class="btn_lnb_toggle">메뉴펼침</a>
+    </header>
+    <!--// Header -->
+    <div class="bg_lnb_wrap"></div>
+</div>
+		<!--// Header Wrap -->
+		<hr>
+
+		<!-- Container -->
+		<div id="Container">
+
+			<!-- Section01 -->
+			<div class="section_wrap section_main01" style="background:#333;">
+				<!-- 2505신규영상 -->
+				<div class="vedio_wrap">
+					<video class="videoTag" src="https://www.dongwonfnb.com/Images/Main/globe-2025-new.mp4" autoplay loop playsinline muted></video>
+				</div>
+				<!-- 2505신규영상 -->
+				
+				<!-- <div class="slider_nav_wrap">
+					<div class="slider_nav mainVisual_nav">
+						<a href="#MainVisual" onClick="javascript:return false;" class="btn_slider_nav btn_prev">이전</a>
+						<a href="#MainVisual" onClick="javascript:return false;" class="btn_slider_nav btn_next">다음</a>
+					</div>
+				</div>
+				<div class="slider_control">
+					<a href="#MainVisual" onClick="javascript:return false;" class="btn_slider_control btn_stop">정지</a>
+					<a href="#MainVisual" onClick="javascript:return false;" class="btn_slider_control btn_play">재생</a>
+				</div>
+
+				<ul id="MainVisual" class="slider_mainVisual">
+					<li>
+						<div class="sliderPanel_wrap vedio">
+							<div class="sliderPanel">
+								<video class="vedio_layout" src="https://www.dongwonfnb.com/Images/Main/globe-2025-new.mp4" autoplay loop playsinline muted></video>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="sliderPanel_wrap" style="background:url('/UpFiles/bg_mainVisual01.jpg') center center no-repeat; background-size:cover;">
+							<div class="sliderPanel">
+								<img src="https://www.dongwonfnb.com/Images/Main/img_mainVisual_alpha0.png" alt="고객 건강에 기여하는 FirstBest 식문화 기업">
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="sliderPanel_wrap" style="background:url('/UpFiles/bg_mainVisual02.jpg') center center no-repeat; background-size:cover;">
+							<div class="sliderPanel">
+								<img src="https://www.dongwonfnb.com/Images/Main/img_mainVisual_alpha0.png" alt="맛과 건강은 기본, 간편하고 즐거운 식생활을 제안합니다.">
+							</div>
+						</div>
+					</li>
+				</ul> -->
+			</div>
+			<!--//Section01 -->
+
+			<!-- Section02 -->
+            <div class="section_wrap section_main02 renewal">
+				<section class="section_main">
+					<div class="section_header">
+						<h2>Our Brands</h2>
+					</div>
+					<div class="section_body">
+                        <div class="brand_box_wrap dongwon ourbrands">
+                            <div class="brand_box dongwon col_1">
+                              <a href="#;">
+                                <span class="logo">동원</span>
+                                <span class="txt"><span id="leftText">매일 맛있는 경험
+                                </span><em>|</em><span id="rightText">Everyday Good Food</span></span>
+                              </a>
+                            </div>
+                        </div>
+                        <div class="brand_tabs">
+                            <button class="tab active" data-target="ocean">Ocean Harvest<br><span>바다에서 온 건강</span></button>
+                            <button class="tab" data-target="land">Land Harvest<br><span>자연에서 온 건강</span></button>
+                            <button class="tab" data-target="healthy">Healthy Harvest<br><span>활력을 주는 건강</span></button>
+                            <button class="tab" data-target="beverage">Beverage Harvest<br><span>매일 마시는 건강</span></button>
+                        </div>
+
+                        <!-- ✅ 탭 콘텐츠 영역 -->
+                        <div class="tab_contents">
+
+                        <!-- Ocean Harvest -->
+                        <div class="tab_content active" id="ocean">
+                            <div class="swiper ocean-swiper brand_box_wrap ocean">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide brand_box dwtuna col_2">
+                                    <a href="#;">
+                                      <span class="logo">동원참치</span>
+                                      <span class="txt">대한민국No1. 동원참치</span>
+                                    </a>
+                                  </div>
+                                  <div class="swiper-slide brand_box baleun-eomug">
+                                    <a href="#;">
+                                      <span class="logo">바른어묵</span>
+                                      <span class="txt">매일매일 새 기름</span>
+                                    </a>
+                                  </div>
+                                  <div class="swiper-slide brand_box theking">
+                                    <a href="#;">
+                                      <span class="logo">The King</span>
+                                      <span class="txt">왕크니까 더 맛있다</span>
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+
+                        <!-- Land Harvest -->
+                        <div class="tab_content" id="land">
+                            <div class="swiper land-swiper brand_box_wrap land">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide brand_box yangban"><a href="#;"><span class="logo">양반</span><span class="txt">한식 맛의 오리지널</span></a></div>
+                                  <div class="swiper-slide brand_box denmark"><a href="#;"><span class="logo">덴마크</span><span class="txt">Fresh Mark 덴마크</span></a></div>
+                                  <div class="swiper-slide brand_box sowanamu"><a href="#;"><span class="logo">소와나무</span><span class="txt">자연을 따릅니다, 소와 나무</span></a></div>
+                                  <div class="swiper-slide brand_box cuisine"><a href="#;"><span class="logo">퀴진</span><span class="txt">요리의 품격을 세우다</span></a></div>
+                                  <div class="swiper-slide brand_box richam"><a href="#;"><span class="logo">리챔</span><span class="txt">간이 딱 맞는 리챔</span></a></div>
+                                  <div class="swiper-slide brand_box dimsum"><a href="#;"><span class="logo">딤섬</span><span class="txt">대한민국 1등 프리미엄 딤섬</span></a></div>
+                                  <div class="swiper-slide brand_box gaesung"><a href="#;"><span class="logo">개성</span><span class="txt">더 맛있게 더 알차게</span></a></div>
+                                  <div class="swiper-slide brand_box grilly"><a href="#;"><span class="logo">그릴리</span><span class="txt">직화로 두 번 구워</span></a></div>
+                                  <div class="swiper-slide brand_box just"><a href="#;"><span class="logo">저스트</span><span class="txt">설탕 첨가없는 건강한 달콤함</span></a></div>
+                                  <div class="swiper-slide brand_box harumi"><a href="#;"><span class="logo">하루미</span><span class="txt">오늘을 맛있는 하루로</span></a></div>
+                                  <div class="swiper-slide brand_box sangsang"><a href="#;"><span class="logo">상상</span><span class="txt">최상의 품질, 최고의 맛</span></a></div>
+                                  <div class="swiper-slide brand_box thebanchan"><a href="#;"><span class="logo">더반찬&</span><span class="txt">맛있는 여유, 더반찬&</span></a></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>                              
+                        </div>
+
+                        <!-- Healthy Harvest -->
+                        <div class="tab_content" id="healthy">
+                            <div class="swiper healthy-swiper brand_box_wrap healthy">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide brand_box gnc"><a href="#;"><span class="logo">GNC</span><span class="txt">세계인의 맞춤건강 GNC</span></a></div>
+                                  <div class="swiper-slide brand_box cheonjiin"><a href="#;"><span class="logo">천지인</span><span class="txt">동원이 제대로 만든 홍삼</span></a></div>
+                                  <div class="swiper-slide brand_box beautick"><a href="#;"><span class="logo">Beautick</span><span class="txt">아름다운 완성 파트너</span></a></div>
+                                  <div class="swiper-slide brand_box nutriplan"><a href="#;"><span class="logo">NutriPlan</span><span class="txt">우리가족 영양밸런스</span></a></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>                              
+                        </div>
+
+                        <!-- Beverage Harvest -->
+                        <div class="tab_content" id="beverage">
+                            <div class="swiper beverage-swiper brand_box_wrap beverage">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide brand_box dwdrink"><a href="#;"><span class="logo">동원샘물</span><span class="txt">대자연의 깨끗함을 담다</span></a></div>
+                                  <div class="swiper-slide brand_box bosunggreentea"><a href="#;"><span class="logo">보성녹차</span><span class="txt">보성이 키우고 동원이 담다</span></a></div>
+                                  <div class="swiper-slide brand_box bosungblacktea"><a href="#;"><span class="logo">보성홍차</span><span class="txt">0kcal로 즐기는 아이스티</span></a></div>
+                                  <div class="swiper-slide brand_box takealive"><a href="#;"><span class="logo">A'live</span><span class="txt">유산균으로 생기충전</span></a></div>
+                                  <div class="swiper-slide brand_box coolpics"><a href="#;"><span class="logo">쿨피스</span><span class="txt">유산균이 살아있는 쿨피스</span></a></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>                              
+                        </div>
+
+                        </div>                     
+                    </div>
+                    <a href="" class="more_btn">전체 브랜드 보기 +</a>
+                </section>
+                
+            </div>
+
+    
+
+
+		<!-- Section04 -->
+		<div class="section_wrap section_main04">
+			<section class="section_main">
+				<div class="section_header">
+					<h2>Dongwon F&B</h2>
+				</div>
+				<div class="section_body">
+					<ul class="dongwonFnb">
+						<li class="item">
+							<div class="videoItem">
+								
+							</div>
+						</li>
+						<li class="item">
+							<div class="newsItem">
+								<h3>News</h3>
+								
+									
+										
+										
+										<div class="articleLabel ico2 news">보도자료</div>
+										
+									
+									<dl class="newsArticle">
+										<dt class="newsTit">
+											<h4><a href="/services/Customer/News/News_View?contentno=1307">동원F&B, 프리미엄 발효유 ‘덴마크 하이(Hej!)’ 신규 브랜드 캠페인 전개</a></h4>
+										</dt>
+										<dd class="newsCont">
+											<a href="/services/Customer/News/News_View?contentno=1307">동원F&B, 프리미엄 발효유 ‘덴마크 하이(Hej!)’ 신규 브랜드 캠페인 전개   - 덴...</a>
+										</dd>
+									</dl>
+									<div class="newsInfo">
+										<span class="date">2025-06-09</span>
+										<span class="readNum">63</span>
+									</div>
+								
+							</div>
+						</li>
+						<li class="item">
+							<div class="bannerItem">
+								<a href="/services/Company/Company"><img src="https://www.dongwonfnb.com/Images/Main/ban_company.gif" alt="Company - 한눈에 보는 동원F&B"></a>
+							</div>
+						</li>
+						<li class="item">
+							<div class="bannerItem" style="height:148px;">
+								<a href="/services/Invest/Bulletin"><img src="https://www.dongwonfnb.com/Images/Main/ban_bulletin.gif" alt="전자공고 - 제 20기 결산 공고"></a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+		<!--//Section4 -->
+
+		<!-- Section05 : 2018/03/13 카카오스토리 삭제 2018/09/06 인스타그램 추가-->
+		<div class="section_wrap section_main05">
+			<section class="section_main">
+				<div class="section_header">
+					<h2>Social Live</h2>
+				</div>
+				<div class="section_body">
+
+					<!--// Tab -->
+					<!-- 소셜라이브 리스트 -->
+					<div id="SocialList" class="articleList_wrap">
+						<h3 class="hide" id="socialTxt">ALL(전체)</h3>
+
+						<ul class="articleList">
+							
+								<li class="item">
+									<div class="articleItem">
+										
+											
+											
+											<div class="articleLabel sns youtube">유튜브</div>
+											
+											
+										
+										
+										<div class="articleImg">
+											
+												
+													
+														<a href="https://youtu.be/duxv2iSoO3M" title="새창 열림" target="_blank" class="btn_lp_open"><img src="/upload/2023/07/05/16/10/1688541033065/5f8867b9e9054d418e6845661959b2b7.jpg" alt="[D’s 플레이어] 소주와의 환장궁합, 나야 나 보성홍차 아이스티"></a>
+													
+													
+												
+											
+										</div>
+										<div class="article">
+											<div class="articleTit">
+												
+													
+														<h3><a href="https://youtu.be/duxv2iSoO3M" title="새창 열림" target="_blank" class="btn_lp_open">[D’s 플레이어] 소주와의 환장궁합, 나야 나 보성홍차 아이스티</a></h3>
+													
+													
+												
+											</div>
+											<div class="articleBody">
+												
+													
+														<a href="https://youtu.be/duxv2iSoO3M" title="새창 열림" target="_blank" class="btn_lp_open"></a>
+													
+													
+												
+											</div>
+											<div class="articleFoot">
+												<span class="date">2023-06-21 16:10:32</span>
+											</div>
+										</div>
+									</div>
+								</li>
+							
+								<li class="item">
+									<div class="articleItem">
+										
+											
+											
+											<div class="articleLabel sns youtube">유튜브</div>
+											
+											
+										
+										
+										<div class="articleImg">
+											
+												
+													
+														<a href="https://youtu.be/7qxSWUTi4XQ" title="새창 열림" target="_blank" class="btn_lp_open"><img src="/upload/2023/07/05/16/11/1688541114112/23d95118ae05427fb1897f2899b50572.png" alt="[전지적 동원 시점] 뭘 좋아할지 몰라서 다 준비했어, 통조림 과일 모음.ZIP"></a>
+													
+													
+												
+											
+										</div>
+										<div class="article">
+											<div class="articleTit">
+												
+													
+														<h3><a href="https://youtu.be/7qxSWUTi4XQ" title="새창 열림" target="_blank" class="btn_lp_open">[전지적 동원 시점] 뭘 좋아할지 몰라서 다 준비했어, 통조림 과일 모음.ZIP</a></h3>
+													
+													
+												
+											</div>
+											<div class="articleBody">
+												
+													
+														<a href="https://youtu.be/7qxSWUTi4XQ" title="새창 열림" target="_blank" class="btn_lp_open"></a>
+													
+													
+												
+											</div>
+											<div class="articleFoot">
+												<span class="date">2023-06-14 16:11:53</span>
+											</div>
+										</div>
+									</div>
+								</li>
+							
+								<li class="item">
+									<div class="articleItem">
+										
+											
+											
+											<div class="articleLabel sns youtube">유튜브</div>
+											
+											
+										
+										
+										<div class="articleImg">
+											
+												
+													
+														<a href="https://youtu.be/BtREt-CbGIs" title="새창 열림" target="_blank" class="btn_lp_open"><img src="/upload/2023/07/05/16/09/1688540945136/e4b68c516a7b40bd9c320649cca08294.jpg" alt="(eng) 결이 살아있는 일등 치즈의 비밀을 공개합니다"></a>
+													
+													
+												
+											
+										</div>
+										<div class="article">
+											<div class="articleTit">
+												
+													
+														<h3><a href="https://youtu.be/BtREt-CbGIs" title="새창 열림" target="_blank" class="btn_lp_open">(eng) 결이 살아있는 일등 치즈의 비밀을 공개합니다</a></h3>
+													
+													
+												
+											</div>
+											<div class="articleBody">
+												
+													
+														<a href="https://youtu.be/BtREt-CbGIs" title="새창 열림" target="_blank" class="btn_lp_open"></a>
+													
+													
+												
+											</div>
+											<div class="articleFoot">
+												<span class="date">2023-06-07 16:09:04</span>
+											</div>
+										</div>
+									</div>
+								</li>
+							
+						</ul>
+						<!-- 더 보기 -->
+						<div class="btn_more_wrap">
+							<a href="#" onClick="javascript:return false;" class="btn_moreItem">더보기</a>
+						</div>
+						<!--// 더 보기-->
+					</div>
+					<!--// 소셜라이브 리스트 -->
+				</div>
+			</section>
+		</div>
+		<!--//Section5 -->
+
+		<!-- 동영상 팝업 -->
+		<div class="lp_modal">
+			<div id="LP_Video" class="lp_wrap lp_video" data-width="700">
+				<div class="lp_container">
+					
+				</div>
+			</div>
+		</div>
+		<!--// 동영상 팝업 -->
+		<!-- Layer Popup : 내부컨텐츠 팝업 -->
+		<div class="lp_modal">
+			<div id="LP_SocialLive" class="lp_wrap lp_socialLive" data-width="702">
+				<div class="lp_container">
+					<div class="lp_header">
+						<h2>Social Live</h2>
+					</div>
+					<div class="lp_body">
+						<div class="boardView social">
+							<div class="boardRow boardHeader">
+								<div class="boardColD">
+									<span class="boardTit">김치공장 투어 모집</span>
+								</div>
+							</div>
+							<div class="boardRow boardBody">
+								<div class="boardImg"><img src="/UpFiles/img_board_sample.jpg" alt=""></div>
+								<div class="boardContent">
+									댓글 이벤트 당첨자를 발표합니다.<br>
+									많이 참여해주셔서 감사해요~^^ 추첨을 통해 20분을 선발하였으며<br>
+									당첨자는 다음과 같습니다~! 당첨되신 분들은 아래주소를 클릭 해주세요.
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#this" onClick="javascript:lp_close();" class="btn_lp_close white">레이어창닫기</a>
+				</div>
+			</div>
+		</div>
+		<!--// Layer Popup : 내부컨텐츠 팝업 -->
+
+		<!-- 동영상 팝업 -->
+		<div class="lp_modal">
+			<div id="LP_Cf_Video" class="lp_wrap lp_video" data-width="700">
+				<div class="lp_container">
+					<div class="lp_header">
+						<h2>우유리챔</h2>
+					</div>
+					<div class="lp_body">
+						<div class="video_wrap">
+							<div class="video_movie">
+								<iframe width="100%" height="100%" src="https://www.youtube.com/embed/O6pv3wK3bdY?feature=player_detailpage" frameborder="0" title="TV CF - 우유리챔" allowfullscreen></iframe>
+							</div>
+							<div class="video_caption" style="width: 100%; overflow: auto;">
+							자막내용입니다.자막내용입니다.자막내용입니다.자막내용입니다.자막내용입니다.자막내용입니다.자막내용입니다.자막내용입니다.자막내용입니다.자막내용입니다.
+							</div>
+						</div>
+					</div>
+					<a href="#this" onClick="javacript:lp_close();" class="btn_lp_close white">레이어창닫기</a>
+				</div>
+			</div>
+		</div>
+		<!--// 동영상 팝업 -->
+
+		<!--// Container -->
+		<hr>
+
+		<div id="layerPop">
+			
+				
+					<div id="LP_MainPopup77" class="lp_wrap lp_popup" style="position:absolute; left:40px; top:130px; width:305px; height:224px; z-index:1000; overflow:hidden;">
+						<a href="https://www.dongwonfnb.com/services/Invest/Bulletin" target="_blank" title="팝업링크" style="width:100%; height:100%; display:block;"><img src="/upload/2025/06/12/08/50/1749685840724/68409696ae9549628f4be094ac7d9d8f.jpg" alt="팝업이미지"></a>
+						<div class="lp_footer">
+							<div class="todayClose">
+								<input type="checkbox" name="todayPopClose" id="todayPopClose77" value="LP_MainPopup77" class="checkPopClose">
+								<label for="todayPopClose77" class="mar_l5">오늘하루 열지않기</label>
+							</div>
+							<a href="#this" onClick="javascript:layerPopClose('LP_MainPopup77');" class="btn tiny white btn_popup_close"><span>닫기</span></a>
+						</div>
+						<a href="#this" onClick="javascript:layerPopClose('LP_MainPopup77');" class="btn_lp_close btn_popup_close white">레이어창닫기</a>
+					</div>
+				
+			
+				
+					<div id="LP_MainPopup75" class="lp_wrap lp_popup" style="position:absolute; left:700px; top:130px; width:305px; height:224px; z-index:1000; overflow:hidden;">
+						<a href="https://www.dongwonfnb.com/services/Invest/Bulletin" target="_blank" title="팝업링크" style="width:100%; height:100%; display:block;"><img src="/upload/2025/04/14/14/29/1744608549493/1d94b9ddd50445acae29657c1cdf4d35.jpg" alt="팝업이미지"></a>
+						<div class="lp_footer">
+							<div class="todayClose">
+								<input type="checkbox" name="todayPopClose" id="todayPopClose75" value="LP_MainPopup75" class="checkPopClose">
+								<label for="todayPopClose75" class="mar_l5">오늘하루 열지않기</label>
+							</div>
+							<a href="#this" onClick="javascript:layerPopClose('LP_MainPopup75');" class="btn tiny white btn_popup_close"><span>닫기</span></a>
+						</div>
+						<a href="#this" onClick="javascript:layerPopClose('LP_MainPopup75');" class="btn_lp_close btn_popup_close white">레이어창닫기</a>
+					</div>
+				
+			
+				
+					<div id="LP_MainPopup74" class="lp_wrap lp_popup" style="position:absolute; left:375px; top:130px; width:305px; height:224px; z-index:1000; overflow:hidden;">
+						<a href="https://www.dongwonfnb.com/services/Invest/IR" target="_blank" title="팝업링크" style="width:100%; height:100%; display:block;"><img src="/upload/2025/04/14/14/30/1744608602752/ce9a98d30a67403aa772faac723addb9.jpg" alt="팝업이미지"></a>
+						<div class="lp_footer">
+							<div class="todayClose">
+								<input type="checkbox" name="todayPopClose" id="todayPopClose74" value="LP_MainPopup74" class="checkPopClose">
+								<label for="todayPopClose74" class="mar_l5">오늘하루 열지않기</label>
+							</div>
+							<a href="#this" onClick="javascript:layerPopClose('LP_MainPopup74');" class="btn tiny white btn_popup_close"><span>닫기</span></a>
+						</div>
+						<a href="#this" onClick="javascript:layerPopClose('LP_MainPopup74');" class="btn_lp_close btn_popup_close white">레이어창닫기</a>
+					</div>
+				
+			
+		</div>
+		<div id="recipeMoveDiv" style="display:none;"></div>
+
+		<!-- Footer Wrap -->
+			
+
+
+
+	<div id="Footer_Wrap">
+		<!-- Footer -->
+		<footer id="Footer">
+            <div class="logo_footer"><img src="https://www.dongwonfnb.com/Images/Common/logo_footer03.png" alt="Dongwon 동원F&B"></div>
+
+            <!-- FNB Wrap -->
+            <nav class="fnb_wrap">
+                <ul class="fnb">
+                    <li><a href="/services/Etc/Terms">법적고지</a></li>
+                    <li><a href="/services/Etc/Privacy"><strong><font color="orange">개인정보처리방침</font></strong></a></li>
+                    <li><a href="https://www.dongwon.com/ethics/report/write" target="_blank">정도경영 신고센터</a></li>
+                    <li><a href="/services/Customer/QnA/QnA_Write">1:1문의</a></li>
+                    
+                    <li><a href="/services/Etc/Sitemap">사이트맵</a></li>
+                </ul>
+            </nav>
+            <!--// FNB Wrap -->
+
+            <!-- Footer QuickLink -->
+            <div class="footer_quickLink">
+                <div class="familySite_wrap">
+                    <ul class="ban_site">
+                        <li><a href="http://www.dongwonmall.com" target="_blank"><img src="https://www.dongwonfnb.com/Images/Common/ban_site_dongwonMall.gif" alt="동원mall(몰) 바로가기"></a></li>
+                        <li><a href="http://recruit.dongwon.com/" target="_blank"><img src="https://www.dongwonfnb.com/Images/Common/ban_site_dongwonRecruit.gif" alt="동원F&B 인재채용 바로가기"></a></li>
+                    </ul>
+                    <div class="selectBox up familySite">
+                        <div class="selectVal" tabindex="0"><a href="#this" tabindex="-1">Family Site</a></div>
+                        <ul class="selectMenu">
+                            <li><a href="http://www.dongwonmall.com" target="_blank">동원몰</a></li>
+                            <li><a href="http://www.e-chunjiin.co.kr" target="_blank">천지인홍삼</a></li>
+                            <li><a href="http://www.gnckorea.co.kr" target="_blank">GNC</a></li>
+                            <li><a href="http://www.thebanchan.co.kr/" target="_blank">더반찬&amp;</a></li>
+                            <li><a href="http://www.ekcm.co.kr/" target="_blank">금천미트</a></li>
+                            <li><a href="https://www.chuchew.com/" target="_blank">츄츄닷컴</a></li> 
+                            <li><a href="http://order.dongwonfnb.com" target="_blank">대리점주문시스템</a></li>
+                        </ul>
+                    </div>
+                    <div class="selectBox up groupSite">
+                        <div class="selectVal" tabindex="0"><a href="#this" tabindex="-1">그룹 Site</a></div>
+                        <ul class="selectMenu">
+                            <li><a href="https://www.dongwon.com/" target="_blank">동원그룹</a></li>
+                            <li><a href="http://www.dwml.co.kr/" target="_blank">동원산업</a></li>
+                            <li><a href="http://www.dongwonloex.com/" target="_blank">동원로엑스</a><li>
+                            <li><a href="http://www.bidc.co.kr/ko/" target="_blank">BIDC</a><li></li>
+                            <li><a href="http://www.dongwonloexcs.com/" target="_blank">동원로엑스냉장</a></li>
+                            <li><a href="https://www.dongwonmall.com/index.do" target="_blank">동원디어푸드</a></li>
+                            <li><a href="http://www.dwhf.co.kr" target="_blank">동원홈푸드</a></li>
+                            <li><a href="http://dongwonfarms.com" target="_blank">동원팜스</a></li>
+                            <li><a href="http://www.dongwonsystems.com" target="_blank">동원시스템즈</a></li>
+                            <li><a href="https://www.dwce.co.kr/" target="_blank">동원건설산업</a></li> 
+                            <li><a href="http://www.dongwoncns.com" target="_blank">동원CNS</a></li>
+                            <li><a href="https://www.dwinvestment.co.kr/" target="_blank">동원기술투자</a></li>
+                           
+                           <li><a href="http://www.dwef.or.kr/main" target="_blank">동원육영재단</a></li>
+                            <li><a href="http://www.dwleadersacademy.co.kr" target="_blank">동원리더스아카데미</a></li>
+                            
+                            <li><a href="http://www.starkist.com" target="_blank">StarKist</a></li>
+                            <li><a href="http://www.sca-sa.com" target="_blank">S.C.A SA</a></li>
+                            <li><a href="https://www.tapack.com" target="_blank">TTP</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="footer_sns">
+                    <li><a href="https://www.youtube.com/user/DongwonFnB" target="_blank"><img src="https://www.dongwonfnb.com/Images/Common/ico_sns_youtube.png" alt="You Tube(유튜브)"></a></li>
+                    <li><a href="http://www.dongwonwell.com/" target="_blank"><img src="https://www.dongwonfnb.com/Images/Common/ico_sns_blog.png" alt="blog(블로그)"></a></li>
+                    <li><a href="http://www.facebook.com/dongwongroup/" target="_blank"><img src="https://www.dongwonfnb.com/Images/Common/ico_sns_facebook.png" alt="F(페이스북)"></a></li>
+                	<li><a href="https://www.instagram.com/dongwongroup/" target="_blank"><img src="https://www.dongwonfnb.com/Images/Common/ico_sns_instagram.png" alt="인스타그램"></a></li>
+                <!--<li><a href="https://story.kakao.com/ch/dongwonfnb" target="_blank"><img src="https://www.dongwonfnb.com/Images/Common/ico_sns_kakaostory.png" alt="카카오스토리"></a></li>-->
+                </ul>
+            </div>
+            <!--// Footer QuickLink -->
+
+            <!-- Footer SiteInfo -->
+            <div class="footer_siteInfo">
+                <address class="footer_addr">서울특별시 서초구 마방로 68 (서울시 서초구 양재동 275)&nbsp;&nbsp;&nbsp;사업자번호 214-86-68729&nbsp;&nbsp;&nbsp;대표이사 김성용&nbsp;&nbsp;&nbsp;고객상담실 : 080-589-3223/4&nbsp;&nbsp;&nbsp;대표번호 : 1688-3266</address>
+                <div class="copyright">Copyright ⓒ 2015 동원F&amp;B. All rights reserved.</div>
+            </div>
+            <!--// Footer SiteInfo -->
+
+			<!-- wa 인증마크 : 2년 인증 기간 종료 2018.08.02
+			<p class="wa_logo"><img src="https://www.dongwonfnb.com/Images/Etc/wa_logo.png" /></p>
+			-->
+
+		</footer>
+		<!--// Footer -->
+	</div>
+
+	<!-- Back to Top -->
+    <div class="btn_backToTop">
+        <p><a href="#Container" class="btn" title="처음 본문 영역으로 이동함"><span>Back to Top</span></a></p>
+    </div>
+    <!--// Back to Top -->
+    
+
+		<!--// Footer Wrap -->
+
+		<!-- Main LayerPop -->
+			
+
+	<!-- Main Popup -->
+	<div id="LP_MainPopup1" class="lp_wrap lp_popup" style="position:absolute; left:100px; top:130px; max-width:500px; height:580px; z-index:999;">
+		<div class="lp_container">
+			
+			<div class="lp_body">
+				<a href="#" title="팝업링크">
+					<img src="https://www.dongwonfnb.com/Images/Main/popup_20160512.jpg" alt="팝업이미지">
+				</a>
+			</div>
+			<div class="lp_footer">
+				<div class="todayClose">
+					<input type="checkbox" name="todayPopClose" id="todayPopClose1" value="LP_MainPopup1" class="checkPopClose">
+					<label for="todayPopClose1" class="mar_l5">오늘하루 열지않기</label>
+				</div>
+				<a href="#this" class="btn tiny white btn_popup_close"><span>닫기</span></a>			
+			</div>
+			<a href="#this" onClick="javascript:layerPopClose('LP_MainPopup1');" class="btn_lp_close btn_popup_close white">레이어창닫기</a>	
+		</div>	
+	</div>	
+	<!--// Main Popup -->
+		<!--// Main LayerPop -->
+	</div>
+    <script src="js/for_index.js"></script>
+</body>
+</html>
