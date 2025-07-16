@@ -107,44 +107,49 @@ $(function () {
   // 초기 로딩 시 체크
   $(window).trigger("scroll");
 
-  const marquee = document.querySelector(".marquee");
-  const track = marquee.querySelector(".marquee-track");
+  const section3 = document.querySelector("#section3");
 
-  // ✅ 원본 + 2배 복제 = 총 3세트
-  track.innerHTML += track.innerHTML + track.innerHTML;
+  if (section3) {
+    const marquee = document.querySelector(".marquee");
+    const track = marquee.querySelector(".marquee-track");
 
-  // ✅ 반응형 판단
-  const isMobile = window.innerWidth <= 768;
-  const duration = isMobile ? 50 : 50;
+    // ✅ 원본 + 2배 복제 = 총 3세트
+    track.innerHTML += track.innerHTML + track.innerHTML;
 
-  // ✅ 총 너비 기준 한 세트 거리만큼만 이동
-  const distance = track.offsetWidth / 3;
+    // ✅ 반응형 판단
+    const isMobile = window.innerWidth <= 768;
+    const duration = isMobile ? 50 : 50;
 
-  // ✅ 무한 롤링 애니메이션
-  let anim = gsap.to(track, {
-    x: `-=${distance}`,
-    duration: duration,
-    ease: "none",
-    repeat: -1,
-    modifiers: {
-      x: gsap.utils.unitize(x => parseFloat(x) % distance)
-    }
-  });
+    // ✅ 총 너비 기준 한 세트 거리만큼만 이동
+    const distance = track.offsetWidth / 3;
 
-  // ✅ 드래그 (PC+모바일)
-  Draggable.create(track, {
-    type: "x",
-    inertia: true,
-    onPress() {
-      anim.pause();
-    },
-    onDrag() {
-      gsap.set(track, { x: this.x });
-    },
-    onRelease() {
-      const currentX = gsap.getProperty(track, "x");
-      anim.invalidate().restart().progress(0);
-      gsap.set(track, { x: currentX });
-    }
-  });
+    // ✅ 무한 롤링 애니메이션
+    let anim = gsap.to(track, {
+      x: `-=${distance}`,
+      duration: duration,
+      ease: "none",
+      repeat: -1,
+      modifiers: {
+        x: gsap.utils.unitize(x => parseFloat(x) % distance)
+      }
+    });
+
+    // ✅ 드래그 (PC+모바일)
+    Draggable.create(track, {
+      type: "x",
+      inertia: true,
+      onPress() {
+        anim.pause();
+      },
+      onDrag() {
+        gsap.set(track, { x: this.x });
+      },
+      onRelease() {
+        const currentX = gsap.getProperty(track, "x");
+        anim.invalidate().restart().progress(0);
+        gsap.set(track, { x: currentX });
+      }
+    });
+  }
+
 });

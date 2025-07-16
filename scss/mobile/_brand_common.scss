@@ -5,13 +5,18 @@
                 height:px(400);
                 filter:unset;
               }
+              .logo{
+                  width:px(300);
+                  height:px(240);
+              }
               &.harumi{
                   .banner{
                     background-size:150%;
                   }
-                  .logo{
-                      width:px(300);
-                      height:px(240);
+              }
+              &.sangsang{
+                  .banner{
+                    background-size:150%;
                   }
               }
               .scroll_txt{
@@ -97,6 +102,9 @@
           &.n2 {
             justify-content:center;
             flex-direction: column-reverse;
+            .txt_wrap{
+              padding-left:unset;
+            }
           }
       
           .photo {
@@ -164,6 +172,12 @@
             &.harumi{
               height:px(550);
             }
+            &.sangsang{
+              height:px(1115)
+            }
+            &.just{
+              height:px(590)
+            }
           }
       
           .box {
@@ -172,6 +186,7 @@
             letter-spacing: -0.6px;
       
             strong {
+              display:block;
               @include fontmobile(30, 600, #111);
               margin-bottom: px(4);
               width:px(300);
@@ -181,9 +196,20 @@
                 top: px(10);
               }
             }
+            span{
+              min-width:px(300);
+            }
+            .space{
+              width:unset !important;
+            }
             img{
+              display:block;
               width:px(300);
               margin-top:px(20);
+              &.height{
+                width:unset;
+                height:px(168);
+              }
             }
             &.left {
               padding-right: px(410);
@@ -263,28 +289,22 @@
       
             p {
               @include fontmobile(36, 400);
-              text-align:center;
               position: absolute;
               transition: all .2s ease;
+              box-sizing:border-box;
+              em{
+                display:inline-block;
+                margin-right:px(10);
+                margin-top:px(10);
+              }
             }
             
           }
         }
-      
-        .marks {
-          column-gap: px(20);
-          margin-top: px(60);
-      
-          img {
-            &:nth-of-type(1){
-                width:px(240);
-            }
-            &:nth-of-type(2){
-                width:px(260);
-            }
-            &:nth-of-type(3){
-                width:px(182);
-            }
+        &.sangsang{
+          .box p{
+            text-align:left !important;
+            font-size:px(32);
           }
         }
     }

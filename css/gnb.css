@@ -84,6 +84,7 @@
   z-index: 100;
   width: 178px;
   height: 100%;
+  background: #ffffff;
 }
 #Header .lnb_wrap_pc .lnb li.node1 .submenu_wrap.sub01 .depth3::before {
   content: "";
