@@ -176,7 +176,10 @@
               height:px(1115)
             }
             &.just{
-              height:px(590)
+              height:px(590); 
+              ~.box>.mobile{
+                width:18vw;
+            }
             }
           }
       

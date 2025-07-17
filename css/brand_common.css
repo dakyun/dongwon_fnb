@@ -1255,6 +1255,9 @@
   #section2 .history_flow .long_line.just {
     height: 76.8229166667vw;
   }
+  #section2 .history_flow .long_line.just ~ .box > .mobile {
+    width: 18vw;
+  }
   #section2 .history_flow .box {
     font-size: 3.90625vw;
     font-weight: 400;
