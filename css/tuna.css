@@ -352,6 +352,19 @@
   pointer-events: none;
   z-index: 1;
 }
+.detail_page .contents_top .banner.video {
+  -webkit-filter: unset;
+          filter: unset;
+  position: relative;
+}
+.detail_page .contents_top .banner.video video {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
 .detail_page .contents_top .logo {
   font-size: 0;
   text-indent: -9999px;

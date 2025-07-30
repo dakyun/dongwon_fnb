@@ -31,6 +31,17 @@
                 pointer-events: none;
                 z-index: 1;
             }
+            &.video{
+                filter:unset;
+                position:relative;
+                video{
+                    width:100%;
+                    position:absolute;
+                    top:50%;
+                    left:0;
+                    transform:translateY(-50%);
+                }
+            }
         }
         .logo{
             font-size:0;
