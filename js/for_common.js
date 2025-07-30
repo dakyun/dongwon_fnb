@@ -170,10 +170,10 @@ $(function () {
     loop: true,
     speed: 700,
     slidesPerView: 'auto',
-    // autoplay: {
-    //   delay: 3000,       // ✅ 3초마다
-    //   disableOnInteraction: false,  // 유저가 조작해도 계속 자동재생
-    // },
+    autoplay: {
+      delay: 3000,       // ✅ 3초마다
+      disableOnInteraction: false,  // 유저가 조작해도 계속 자동재생
+    },
     on: {
       slideChange: function () {
         const realIndex = this.realIndex % totalOriginal;
