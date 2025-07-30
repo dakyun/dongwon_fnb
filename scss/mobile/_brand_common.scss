@@ -89,7 +89,12 @@
           .scroll_txt {
             display:none;
           }
-      
+          span{
+            &.br_pc{
+              display:inline-block;
+              margin-right:px(10);
+            }
+          }
           flex-wrap: wrap;
           justify-content:center;
           column-gap:unset;
@@ -190,6 +195,15 @@
             &.baleun{
               height:px(1460); 
             }
+            &.theking{
+              height:px(580); 
+            }
+            &.gaesung{
+              height:px(1165); 
+            }
+            &.coolpics{
+              height:px(1375); 
+            }
           }
       
           .box {
@@ -226,6 +240,9 @@
               &.height{
                 width:unset;
                 height:px(168);
+                &.sizeup{
+                  height:px(250);
+                }
               }
             }
             &.left {
@@ -256,7 +273,19 @@
         overflow: hidden;
       
         .marquee {
-          margin-top: px(60);
+          margin-top: px(80);
+          &.coolpics{
+            .box{
+                strong{
+                    margin-top:px(50);
+                    font-size:px(32);
+                    span{
+                        font-size:px(24);
+                        margin-bottom:px(10);
+                    }
+                }
+            }
+        }
           .marquee-track {
             gap:px(30)
           }

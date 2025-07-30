@@ -153,6 +153,43 @@
                 background-image:url(../images/logo/baleun-eomug.png);
             }
         }
+        &.theking{
+            .banner{
+                z-index:0;
+                &::before{
+                    background:#000;
+                    opacity:.5;
+                }
+            }
+            .logo{
+                background-image:url(../images/logo/theking.png);
+            }
+        }
+        &.gaesung{
+            .banner{
+                z-index:0;
+                &::before{
+                    background:#000;
+                    opacity:.5;
+                }
+            }
+            .logo{
+                background-image:url(../images/logo/gaesung.png);
+            }
+        }
+        &.coolpics{
+            .banner{
+                z-index:0;
+                &::before{
+                    background:#000;
+                    opacity:.5;
+                }
+            }
+            .logo{
+                background-image:url(../images/logo/coolpics.png);
+                filter: brightness(0) invert(1);
+            }
+        }
     }
     .inner{
         width:1200px;
@@ -339,6 +376,15 @@
             &.baleun{
                 height:1635px;
             }
+            &.theking{
+                height:605px;
+            }
+            &.gaesung{
+                height:1350px;
+            }
+            &.coolpics{
+                height:1265px;
+            }
         }
         .box {
           opacity: 0;
@@ -426,10 +472,25 @@
     .marquee {
         overflow: hidden;
         width: 100%;
-        margin-top:60px;
+        margin-top:80px;
+        &.coolpics{
+            .box{
+                strong{
+                    margin-top:50px;
+                    font-size:30px;
+                    span{
+                        display:block;
+                        font-size:22px;
+                        font-weight:400;
+                        color:#7e7e7e;
+                        margin-bottom:15px;
+                    }
+                }
+            }
+        }
         .marquee-track {
             display: flex;
-            gap: 30px; /* 간격 */
+            gap: 40px; /* 간격 */
             width: max-content;
             cursor: default !important;
         }
@@ -668,12 +729,12 @@
             }
             &.dot{
                 p{
-                    padding-left:20px;
+                    padding-left:12px;
+                    box-sizing:border-box;
                     span{
                         display:block;
                         padding-left:20px;
                         position:relative;
-                        max-width:95%;
                         &::before{
                             content:'•';
                             display:inline-block;
@@ -793,6 +854,54 @@
                 }
                 &:nth-of-type(3){
                     background-image:url(../images/baleun/point03.jpg);
+                }
+            }
+        }
+    }
+    &.theking{
+        background:#F8ABA1;
+        .up_boxs{
+            .box{
+                &:nth-of-type(1){
+                    background-image:url(../images/theking/point01.jpg);
+                }
+                &:nth-of-type(2){
+                    background-image:url(../images/theking/point02.jpg);
+                }
+                &:nth-of-type(3){
+                    background-image:url(../images/theking/point03.jpg);
+                }
+            }
+        }
+    }
+    &.gaesung{
+        background:#FFA028;
+        .up_boxs{
+            .box{
+                &:nth-of-type(1){
+                    background-image:url(../images/gaesung/point01.jpg);
+                }
+                &:nth-of-type(2){
+                    background-image:url(../images/gaesung/point02.jpg);
+                }
+                &:nth-of-type(3){
+                    background-image:url(../images/gaesung/point03.jpg);
+                }
+            }
+        }
+    }
+    &.coolpics{
+        background:#FFBFBF;
+        .up_boxs{
+            .box{
+                &:nth-of-type(1){
+                    background-image:url(../images/coolpics/point01.jpg);
+                }
+                &:nth-of-type(2){
+                    background-image:url(../images/coolpics/point02.jpg);
+                }
+                &:nth-of-type(3){
+                    background-image:url(../images/coolpics/point03.jpg);
                 }
             }
         }

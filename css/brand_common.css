@@ -472,6 +472,38 @@
 .detail_page .contents_top.baleun .logo {
   background-image: url(../images/logo/baleun-eomug.png);
 }
+.detail_page .contents_top.theking .banner {
+  z-index: 0;
+}
+.detail_page .contents_top.theking .banner::before {
+  background: #000;
+  opacity: 0.5;
+}
+.detail_page .contents_top.theking .logo {
+  background-image: url(../images/logo/theking.png);
+}
+.detail_page .contents_top.gaesung .banner {
+  z-index: 0;
+}
+.detail_page .contents_top.gaesung .banner::before {
+  background: #000;
+  opacity: 0.5;
+}
+.detail_page .contents_top.gaesung .logo {
+  background-image: url(../images/logo/gaesung.png);
+}
+.detail_page .contents_top.coolpics .banner {
+  z-index: 0;
+}
+.detail_page .contents_top.coolpics .banner::before {
+  background: #000;
+  opacity: 0.5;
+}
+.detail_page .contents_top.coolpics .logo {
+  background-image: url(../images/logo/coolpics.png);
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
 .detail_page .inner {
   width: 1200px;
   margin: 0 auto;
@@ -693,6 +725,15 @@
 #section2 .history_flow .long_line.baleun {
   height: 1635px;
 }
+#section2 .history_flow .long_line.theking {
+  height: 605px;
+}
+#section2 .history_flow .long_line.gaesung {
+  height: 1350px;
+}
+#section2 .history_flow .long_line.coolpics {
+  height: 1265px;
+}
 #section2 .history_flow .box {
   opacity: 0;
   -webkit-transform: translateY(100px);
@@ -790,13 +831,24 @@
 #section3 .marquee {
   overflow: hidden;
   width: 100%;
-  margin-top: 60px;
+  margin-top: 80px;
+}
+#section3 .marquee.coolpics .box strong {
+  margin-top: 50px;
+  font-size: 30px;
+}
+#section3 .marquee.coolpics .box strong span {
+  display: block;
+  font-size: 22px;
+  font-weight: 400;
+  color: #7e7e7e;
+  margin-bottom: 15px;
 }
 #section3 .marquee .marquee-track {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px; /* 간격 */
+  gap: 40px; /* 간격 */
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -1079,13 +1131,14 @@
   text-align: center;
 }
 #section4 .up_boxs .box.dot p {
-  padding-left: 20px;
+  padding-left: 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 #section4 .up_boxs .box.dot p span {
   display: block;
   padding-left: 20px;
   position: relative;
-  max-width: 95%;
 }
 #section4 .up_boxs .box.dot p span::before {
   content: "•";
@@ -1182,6 +1235,42 @@
 }
 #section4.baleun .up_boxs .box:nth-of-type(3) {
   background-image: url(../images/baleun/point03.jpg);
+}
+#section4.theking {
+  background: #F8ABA1;
+}
+#section4.theking .up_boxs .box:nth-of-type(1) {
+  background-image: url(../images/theking/point01.jpg);
+}
+#section4.theking .up_boxs .box:nth-of-type(2) {
+  background-image: url(../images/theking/point02.jpg);
+}
+#section4.theking .up_boxs .box:nth-of-type(3) {
+  background-image: url(../images/theking/point03.jpg);
+}
+#section4.gaesung {
+  background: #FFA028;
+}
+#section4.gaesung .up_boxs .box:nth-of-type(1) {
+  background-image: url(../images/gaesung/point01.jpg);
+}
+#section4.gaesung .up_boxs .box:nth-of-type(2) {
+  background-image: url(../images/gaesung/point02.jpg);
+}
+#section4.gaesung .up_boxs .box:nth-of-type(3) {
+  background-image: url(../images/gaesung/point03.jpg);
+}
+#section4.coolpics {
+  background: #FFBFBF;
+}
+#section4.coolpics .up_boxs .box:nth-of-type(1) {
+  background-image: url(../images/coolpics/point01.jpg);
+}
+#section4.coolpics .up_boxs .box:nth-of-type(2) {
+  background-image: url(../images/coolpics/point02.jpg);
+}
+#section4.coolpics .up_boxs .box:nth-of-type(3) {
+  background-image: url(../images/coolpics/point03.jpg);
 }
 
 #section5 {
@@ -1404,6 +1493,10 @@
   #section1 .txt .scroll_txt {
     display: none;
   }
+  #section1 .txt span.br_pc {
+    display: inline-block;
+    margin-right: 1.3020833333vw;
+  }
   #section1 .txt.n3 {
     margin-bottom: 0;
   }
@@ -1492,6 +1585,15 @@
   #section2 .history_flow .long_line.baleun {
     height: 190.1041666667vw;
   }
+  #section2 .history_flow .long_line.theking {
+    height: 75.5208333333vw;
+  }
+  #section2 .history_flow .long_line.gaesung {
+    height: 151.6927083333vw;
+  }
+  #section2 .history_flow .long_line.coolpics {
+    height: 179.0364583333vw;
+  }
   #section2 .history_flow .box {
     font-size: 3.90625vw;
     font-weight: 400;
@@ -1536,6 +1638,9 @@
     width: unset;
     height: 21.875vw;
   }
+  #section2 .history_flow .box img.height.sizeup {
+    height: 32.5520833333vw;
+  }
   #section2 .history_flow .box.left {
     padding-right: 53.3854166667vw;
   }
@@ -1556,7 +1661,15 @@
     overflow: hidden;
   }
   #section3 .marquee {
-    margin-top: 7.8125vw;
+    margin-top: 10.4166666667vw;
+  }
+  #section3 .marquee.coolpics .box strong {
+    margin-top: 6.5104166667vw;
+    font-size: 4.1666666667vw;
+  }
+  #section3 .marquee.coolpics .box strong span {
+    font-size: 3.125vw;
+    margin-bottom: 1.3020833333vw;
   }
   #section3 .marquee .marquee-track {
     gap: 3.90625vw;
