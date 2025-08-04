@@ -504,6 +504,38 @@
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
 }
+.detail_page .contents_top.grilly .banner {
+  z-index: 0;
+}
+.detail_page .contents_top.grilly .banner::before {
+  background: #000;
+  opacity: 0.5;
+}
+.detail_page .contents_top.grilly .logo {
+  background-image: url(../images/logo/grilly.png);
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+.detail_page .contents_top.richam .banner {
+  z-index: 0;
+}
+.detail_page .contents_top.richam .banner::before {
+  background: #000;
+  opacity: 0.5;
+}
+.detail_page .contents_top.richam .logo {
+  background-image: url(../images/logo/richam.png);
+}
+.detail_page .contents_top.yangban .banner {
+  z-index: 0;
+}
+.detail_page .contents_top.yangban .banner::before {
+  background: #000;
+  opacity: 0.5;
+}
+.detail_page .contents_top.yangban .logo {
+  background-image: url(../images/logo/yangban.png);
+}
 .detail_page .inner {
   width: 1200px;
   margin: 0 auto;
@@ -708,10 +740,10 @@
           transform: translateX(-50%) translateY(10px);
 }
 #section2 .history_flow .long_line.harumi {
-  height: 740px;
+  height: 710px;
 }
 #section2 .history_flow .long_line.sangsang {
-  height: 1220px;
+  height: 1235px;
 }
 #section2 .history_flow .long_line.just {
   height: 700px;
@@ -733,6 +765,15 @@
 }
 #section2 .history_flow .long_line.coolpics {
   height: 1265px;
+}
+#section2 .history_flow .long_line.grilly {
+  height: 1355px;
+}
+#section2 .history_flow .long_line.richam {
+  height: 2205px;
+}
+#section2 .history_flow .long_line.yangban {
+  height: 1755px;
 }
 #section2 .history_flow .box {
   opacity: 0;
@@ -1272,6 +1313,42 @@
 #section4.coolpics .up_boxs .box:nth-of-type(3) {
   background-image: url(../images/coolpics/point03.jpg);
 }
+#section4.grilly {
+  background: #fbb901;
+}
+#section4.grilly .up_boxs .box:nth-of-type(1) {
+  background-image: url(../images/grilly/point01.jpg);
+}
+#section4.grilly .up_boxs .box:nth-of-type(2) {
+  background-image: url(../images/grilly/point02.jpg);
+}
+#section4.grilly .up_boxs .box:nth-of-type(3) {
+  background-image: url(../images/grilly/point03.jpg);
+}
+#section4.richam {
+  background: #ffe20a;
+}
+#section4.richam .up_boxs .box:nth-of-type(1) {
+  background-image: url(../images/richam/point01.jpg);
+}
+#section4.richam .up_boxs .box:nth-of-type(2) {
+  background-image: url(../images/richam/point02.jpg);
+}
+#section4.richam .up_boxs .box:nth-of-type(3) {
+  background-image: url(../images/richam/point03.jpg);
+}
+#section4.yangban {
+  background: #FBE9CC;
+}
+#section4.yangban .up_boxs .box:nth-of-type(1) {
+  background-image: url(../images/yangban/point01.jpg);
+}
+#section4.yangban .up_boxs .box:nth-of-type(2) {
+  background-image: url(../images/yangban/point02.jpg);
+}
+#section4.yangban .up_boxs .box:nth-of-type(3) {
+  background-image: url(../images/yangban/point03.jpg);
+}
 
 #section5 {
   padding: 130px 0;
@@ -1380,6 +1457,12 @@
     color: #fff;
     -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
+  }
+  #section4 .up_boxs .box.flip.sizedown p {
+    font-size: 22px;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
   }
 }
 @media (max-width: 768px) {
@@ -1568,22 +1651,22 @@
     width: 18vw;
   }
   #section2 .history_flow .long_line.harumi {
-    height: 71.6145833333vw;
+    height: 73.5677083333vw;
   }
   #section2 .history_flow .long_line.sangsang {
     height: 145.1822916667vw;
   }
   #section2 .history_flow .long_line.just {
-    height: 76.8229166667vw;
+    height: 77.4739583333vw;
   }
   #section2 .history_flow .long_line.cuisine {
     height: 207.03125vw;
   }
   #section2 .history_flow .long_line.dimsum {
-    height: 130.2083333333vw;
+    height: 131.5104166667vw;
   }
   #section2 .history_flow .long_line.baleun {
-    height: 190.1041666667vw;
+    height: 190.7552083333vw;
   }
   #section2 .history_flow .long_line.theking {
     height: 75.5208333333vw;
@@ -1593,6 +1676,15 @@
   }
   #section2 .history_flow .long_line.coolpics {
     height: 179.0364583333vw;
+  }
+  #section2 .history_flow .long_line.grilly {
+    height: 150.1302083333vw;
+  }
+  #section2 .history_flow .long_line.richam {
+    height: 260.4166666667vw;
+  }
+  #section2 .history_flow .long_line.yangban {
+    height: 209.375vw;
   }
   #section2 .history_flow .box {
     font-size: 3.90625vw;
@@ -1784,6 +1876,10 @@
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
   }
+  #section3.swiper_type .bigSwiper.sizedown .swiper-slide-active > img {
+    -webkit-transform: scale(1.05) translateX(12%);
+            transform: scale(1.05) translateX(12%);
+  }
   #section3.swiper_type.full_circle {
     padding-bottom: 80%;
   }
@@ -1847,8 +1943,11 @@
     padding-left: 2.6041666667vw;
     max-width: unset;
   }
-  #section4.sangsang .box p, #section4.dimsum .box p {
+  #section4.sangsang .box p, #section4.dimsumm .box p {
     text-align: left !important;
+    font-size: 4.1666666667vw;
+  }
+  #section4.richam .box p {
     font-size: 4.1666666667vw;
   }
   #section5 {

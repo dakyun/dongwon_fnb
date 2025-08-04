@@ -178,22 +178,22 @@
               width:18vw;
             }
             &.harumi{
-              height:px(550);
+              height:px(565);
             }
             &.sangsang{
               height:px(1115)
             }
             &.just{
-              height:px(590); 
+              height:px(595); 
             }
             &.cuisine{
               height:px(1590);
             }
             &.dimsum{
-              height:px(1000); 
+              height:px(1010); 
             }
             &.baleun{
-              height:px(1460); 
+              height:px(1465); 
             }
             &.theking{
               height:px(580); 
@@ -203,6 +203,15 @@
             }
             &.coolpics{
               height:px(1375); 
+            }
+            &.grilly{
+              height:px(1153); 
+            }
+            &.richam{
+              height:px(2000); 
+            }
+            &.yangban{
+              height:px(1608); 
             }
           }
       
@@ -390,6 +399,13 @@
                     }
                 }
               }
+              &.sizedown{
+                .swiper-slide-active{
+                  >img{
+                    transform: scale(1.05) translateX(12%);
+                  }
+                }
+              }
           }
           &.full_circle{
             padding-bottom:80%;
@@ -452,9 +468,14 @@
             }
           }
         }
-        &.sangsang,&.dimsum{
+        &.sangsang,&.dimsumm{
           .box p{
             text-align:left !important;
+            font-size:px(32);
+          }
+        }
+        &.richam{
+          .box p{
             font-size:px(32);
           }
         }
