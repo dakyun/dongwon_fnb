@@ -29,6 +29,8 @@
                 inset: 0;
                 pointer-events: none;
                 z-index: 1;
+                background:#000;
+                opacity:.5;
             }
             &.video{
                 filter:unset;
@@ -40,6 +42,13 @@
                     left:0;
                     transform:translateY(-50%);
                 }
+            }
+        }
+        .banner{
+            z-index:0;
+            &::before{
+                background:#000;
+                opacity:.5;
             }
         }
         .logo{
@@ -118,113 +127,76 @@
             }
         }
         &.cuisine{
-            .banner{
-                z-index:0;
-                &::before{
-                    background:#000000;
-                    opacity:.5;
-                }
-            }
             .logo{
                 background-image:url(../images/logo/cuisine.png);
             }
         }
         &.dimsum{
-            .banner{
-                z-index:0;
-                &::before{
-                    background:#000000;
-                    opacity:.5;
-                }
-            }
             .logo{
                 background-image:url(../images/logo/dimsum.png);
             }
         }
         &.baleun{
-            .banner{
-                z-index:0;
-                &::before{
-                    background:#000000;
-                    opacity:.5;
-                }
-            }
             .logo{
                 background-image:url(../images/logo/baleun-eomug.png);
             }
         }
         &.theking{
-            .banner{
-                z-index:0;
-                &::before{
-                    background:#000;
-                    opacity:.5;
-                }
-            }
             .logo{
                 background-image:url(../images/logo/theking.png);
             }
         }
         &.gaesung{
-            .banner{
-                z-index:0;
-                &::before{
-                    background:#000;
-                    opacity:.5;
-                }
-            }
             .logo{
                 background-image:url(../images/logo/gaesung.png);
             }
         }
         &.coolpics{
-            .banner{
-                z-index:0;
-                &::before{
-                    background:#000;
-                    opacity:.5;
-                }
-            }
             .logo{
                 background-image:url(../images/logo/coolpics.png);
                 filter: brightness(0) invert(1);
             }
         }
         &.grilly{
-            .banner{
-                z-index:0;
-                &::before{
-                    background:#000;
-                    opacity:.5;
-                }
-            }
             .logo{
                 background-image:url(../images/logo/grilly.png);
-                filter: brightness(0) invert(1);
             }
         }
         &.richam{
-            .banner{
-                z-index:0;
-                &::before{
-                    background:#000;
-                    opacity:.5;
-                }
-            }
             .logo{
                 background-image:url(../images/logo/richam.png);
             }
         }
         &.yangban{
+            .logo{
+                background-image:url(../images/logo/yangban.png);
+            }
+        }
+        &.bosunggreentea{
             .banner{
-                z-index:0;
+                background-image:url(../images/bosunggreentea/bosunggreentea_bg_pc.png);
                 &::before{
-                    background:#000;
-                    opacity:.5;
+                    background:rgba(0, 0, 0, 0.5);
                 }
             }
             .logo{
-                background-image:url(../images/logo/yangban.png);
+                background-image:url(../images/logo/bosunggreentea.png);
+            }
+        }
+        &.bosungblacktea{
+            .logo{
+                background-image:url(../images/logo/bosungblacktea.png);
+            }
+        }
+        &.gnc{
+            .logo{
+                background-image:url(../images/logo/gnc.png);
+            }
+        }
+        &.alive{
+            .logo{
+                background-image:url(../images/logo/takealive.png);
+                filter: brightness(0) invert(1);
             }
         }
     }
@@ -414,7 +386,7 @@
                 height:1635px;
             }
             &.theking{
-                height:605px;
+                height:1025px;
             }
             &.gaesung{
                 height:1350px;
@@ -426,10 +398,22 @@
                 height:1355px;
             }
             &.richam{
-                height:2205px;
+                height:1975px;
             }
             &.yangban{
                 height:1755px;
+            }
+            &.bosunggreentea{
+                height:1135px;
+            }
+            &.bosungblacktea{
+                height:1045px;
+            }
+            &.gnc{
+                height:775px;
+            }
+            &.alive{
+                height:1152px;
             }
         }
         .box {
@@ -452,7 +436,7 @@
           }
           span{
             display:block;
-            min-width:300px;
+            min-width:400px;
             small{
                 font-size:20px;
                 display:block;
@@ -1000,6 +984,70 @@
             }
         }
     }
+    &.bosunggreentea{
+        background:#C4DB99;
+        .up_boxs{
+            .box{
+                &:nth-of-type(1){
+                    background-image:url(../images/bosunggreentea/point01.jpg);
+                }
+                &:nth-of-type(2){
+                    background-image:url(../images/bosunggreentea/point02.jpg);
+                }
+                &:nth-of-type(3){
+                    background-image:url(../images/bosunggreentea/point03.jpg);
+                }
+            }
+        }
+    }
+    &.bosungblacktea{
+        background:#ffdcdc;
+        .up_boxs{
+            .box{
+                &:nth-of-type(1){
+                    background-image:url(../images/bosungblacktea/point01.jpg);
+                }
+                &:nth-of-type(2){
+                    background-image:url(../images/bosungblacktea/point02.jpg);
+                }
+                &:nth-of-type(3){
+                    background-image:url(../images/bosungblacktea/point03.jpg);
+                }
+            }
+        }
+    }
+    &.gnc{
+        background:#FFDBE0;
+        .up_boxs{
+            .box{
+                &:nth-of-type(1){
+                    background-image:url(../images/gnc/point01.jpg);
+                }
+                &:nth-of-type(2){
+                    background-image:url(../images/gnc/point02.jpg);
+                }
+                &:nth-of-type(3){
+                    background-image:url(../images/gnc/point03.jpg);
+                }
+            }
+        }
+    }
+    &.alive{
+        background:#a1d9f3;
+        .up_boxs{
+            .box{
+                &:nth-of-type(1){
+                    background-image:url(../images/alive/point01.jpg);
+                }
+                &:nth-of-type(2){
+                    background-image:url(../images/alive/point02.jpg);
+                }
+                &:nth-of-type(3){
+                    background-image:url(../images/alive/point03.jpg);
+                }
+            }
+        }
+    }
 }
 #section5{
     padding:130px 0;
@@ -1111,6 +1159,24 @@
                 }
             }
         }
+    }
+    #section2 .history_flow .box.right.forpc{
+        width:790px;
+    }
+    #section4 .up_boxs .box.center p>span{
+        font-size:21px;
+    }
+    #section2 .history_flow .box span.br_mo{
+        display:unset;
+    }
+    #section2 .history_flow .box span.except{
+        min-width:550px;
+    }
+    #section4 .up_boxs.gnc .box p,#section4 .up_boxs.alive .box p{
+        padding:0 20px
+    }
+    .br_pc{
+        display:block;
     }
 }
 @import './mobile/brand_common';

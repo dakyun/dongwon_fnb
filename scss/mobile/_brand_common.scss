@@ -1,4 +1,10 @@
 @media (max-width: 768px){
+    .br_mo{
+      display:block;
+    }
+    .br_pc{
+      display:unset !important;
+    }
     .detail_page{
         .contents_top{
             .banner{
@@ -36,7 +42,8 @@
                 line-height:1;
                 letter-spacing:-0.6px;
                 &.fs50{
-                    font-size:px(50)
+                    font-size:px(50);
+                    line-height:1.4
                 }
             }
             &3{
@@ -196,7 +203,7 @@
               height:px(1465); 
             }
             &.theking{
-              height:px(580); 
+              height:px(997); 
             }
             &.gaesung{
               height:px(1165); 
@@ -208,10 +215,22 @@
               height:px(1153); 
             }
             &.richam{
-              height:px(2000); 
+              height:px(1867); 
             }
             &.yangban{
               height:px(1608); 
+            }
+            &.bosunggreentea{
+              height:px(1143); 
+            }
+            &.bosungblacktea{
+              height:px(982); 
+            }
+            &.gnc{
+              height:px(830); 
+            }
+            &.alive{
+              height:px(1117); 
             }
           }
       
@@ -233,9 +252,10 @@
             }
             span{
               min-width:px(300);
+              word-break: keep-all;
               line-height:1.4;
               small{
-                font-size:px(24);
+                font-size:px(23);
                 margin-top:px(8);
               }
             }
@@ -425,7 +445,7 @@
                     }
                 }
             }
-        }
+          }
       }
     }
     #section4 {
@@ -474,9 +494,14 @@
             font-size:px(32);
           }
         }
-        &.richam{
+        &.richam,&.alive,&.gnc{
           .box p{
             font-size:px(32);
+          }
+        }
+        &.gnc,&.alive{
+          .box p{
+            padding:0 px(20);
           }
         }
     }
