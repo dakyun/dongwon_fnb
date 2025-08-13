@@ -191,4 +191,8 @@ $(function () {
       });
     });
   }
+  var prNum = $('.pr_list').find('.box').length;
+  if (prNum <= 3) {
+    $('.pr_list').css('justify-content', 'center');
+  }
 });

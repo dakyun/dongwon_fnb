@@ -481,13 +481,19 @@
   background-image: url(../images/logo/yangban.png);
 }
 .detail_page .contents_top.bosunggreentea .banner {
-  background-image: url(../images/bosunggreentea/bosunggreentea_bg_pc.png);
+  background-image: url(../images/bosunggreentea/bosunggreentea_bg_pc.jpg);
 }
 .detail_page .contents_top.bosunggreentea .banner::before {
   background: rgba(0, 0, 0, 0.5);
 }
 .detail_page .contents_top.bosunggreentea .logo {
   background-image: url(../images/logo/bosunggreentea.png);
+}
+.detail_page .contents_top.bosungblacktea .banner {
+  background-image: url(../images/bosungblacktea/bosungblacktea_bg_pc.jpg);
+}
+.detail_page .contents_top.bosungblacktea .banner::before {
+  background: rgba(0, 0, 0, 0.6);
 }
 .detail_page .contents_top.bosungblacktea .logo {
   background-image: url(../images/logo/bosungblacktea.png);
@@ -740,7 +746,7 @@
   height: 1755px;
 }
 #section2 .history_flow .long_line.bosunggreentea {
-  height: 1135px;
+  height: 1115px;
 }
 #section2 .history_flow .long_line.bosungblacktea {
   height: 1045px;
@@ -1736,7 +1742,7 @@
     height: 209.375vw;
   }
   #section2 .history_flow .long_line.bosunggreentea {
-    height: 148.828125vw;
+    height: 135.4166666667vw;
   }
   #section2 .history_flow .long_line.bosungblacktea {
     height: 127.8645833333vw;

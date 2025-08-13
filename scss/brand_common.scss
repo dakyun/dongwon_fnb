@@ -174,7 +174,7 @@
         }
         &.bosunggreentea{
             .banner{
-                background-image:url(../images/bosunggreentea/bosunggreentea_bg_pc.png);
+                background-image:url(../images/bosunggreentea/bosunggreentea_bg_pc.jpg);
                 &::before{
                     background:rgba(0, 0, 0, 0.5);
                 }
@@ -184,6 +184,12 @@
             }
         }
         &.bosungblacktea{
+            .banner{
+                background-image:url(../images/bosungblacktea/bosungblacktea_bg_pc.jpg);
+                &::before{
+                    background:rgba(0, 0, 0, 0.6);
+                }
+            }
             .logo{
                 background-image:url(../images/logo/bosungblacktea.png);
             }
@@ -404,7 +410,7 @@
                 height:1755px;
             }
             &.bosunggreentea{
-                height:1135px;
+                height:1115px;
             }
             &.bosungblacktea{
                 height:1045px;
