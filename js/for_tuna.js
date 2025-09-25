@@ -204,4 +204,21 @@ $(function () {
       gsap.set(track, { x: currentX });
     }
   });
+
+  const video = document.querySelector('.target_video');
+  const btn   = document.querySelector('.btn_audio');
+
+  // 초기 상태: muted
+  video.muted = true;
+  btn.classList.add('is_muted');
+
+  btn.addEventListener('click', () => {
+    video.muted = !video.muted;
+    btn.classList.toggle('is_muted', video.muted);
+
+    // 재생 안 되고 멈춰 있으면 재생시켜주기
+    if (video.paused) {
+      video.play().catch(()=>{});
+    }
+  });
 });

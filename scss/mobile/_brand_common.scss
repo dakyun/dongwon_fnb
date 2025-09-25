@@ -10,6 +10,17 @@
             .banner{
                 height:px(400);
                 filter:unset;
+                &.video{
+                  .btn_audio {
+                    position:absolute;
+                    top:px(42);
+                    right:px(42);
+                    width:px(68);
+                    height:px(68);
+                    opacity:.8;
+                    img { width:px(68); height:px(68); display:none; }
+                  }
+                }
               }
               .logo{
                   width:px(300);
@@ -215,7 +226,7 @@
               height:px(1153); 
             }
             &.richam{
-              height:px(1867); 
+              height:257vw; 
             }
             &.yangban{
               height:px(1608); 
@@ -224,13 +235,16 @@
               height:px(1040); 
             }
             &.bosungblacktea{
-              height:px(982); 
+              height:126vw; 
             }
             &.gnc{
               height:px(830); 
             }
             &.alive{
               height:px(1117); 
+            }
+            &.thebanchan{
+              height:px(1365); 
             }
           }
       
@@ -347,6 +361,9 @@
         &.swiper_type{
           padding-bottom:65%;
           box-sizing: content-box;
+          &.thebanchan{
+            padding-bottom:80%;
+          }
           &::after{
               display:none;
           }
@@ -366,7 +383,20 @@
                       text-align:center;
                       .gray{
                           margin-top:px(12);
+                          &.thebanchan{
+                            margin-top:px(20);
+                          }
                       }
+                      .chip{
+                        display:inline-block;
+                        border:1px solid #999999;
+                        border-radius:px(60);
+                        padding:px(4) px(16);
+                        font-size:px(28);
+                        margin-right:px(8);
+                        margin-top:px(16);
+                        color:#7E7E7E;
+                    }
                   }
               }
               .custom_pagination{
@@ -378,6 +408,10 @@
                   .dot{
                       width:px(16);
                       height:px(16);
+                  }
+                  &.thebanchan{
+                    bottom:unset;
+                    top:px(1060);
                   }
               }
           }

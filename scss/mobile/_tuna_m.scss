@@ -4,6 +4,17 @@
         .banner{
             height:px(400);
             filter:unset;
+            &.video{
+              .btn_audio {
+                position:absolute;
+                top:px(42);
+                right:px(42);
+                width:px(68);
+                height:px(68);
+                opacity:.8;
+                img { width:px(68); height:px(68); display:none; }
+              }
+            }
           }
           &.tuna{
               .banner{

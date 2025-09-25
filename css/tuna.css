@@ -348,7 +348,8 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 122, 193, 0.631372549);
+  background: #000000;
+  opacity: 0.5;
   pointer-events: none;
   z-index: 1;
 }
@@ -364,6 +365,39 @@
   left: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+.detail_page .contents_top .banner.video .btn_audio {
+  position: absolute;
+  top: 40px;
+  right: 360px;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+  background: transparent;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  opacity: 0.6;
+}
+.detail_page .contents_top .banner.video .btn_audio img {
+  width: 56px;
+  height: 56px;
+  display: none;
+}
+.detail_page .contents_top .banner.video .btn_audio.is_muted .icon_off {
+  display: block;
+}
+.detail_page .contents_top .banner.video .btn_audio:not(.is_muted) .icon_on {
+  display: block;
 }
 .detail_page .contents_top .logo {
   font-size: 0;
@@ -398,6 +432,7 @@
   width: 60px;
   margin: 0 auto;
   opacity: 1;
+  z-index: 5;
 }
 .detail_page .contents_top .scroll_txt::before {
   content: "";
@@ -996,6 +1031,11 @@
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
   }
+  .detail_page .contents_top .banner.video .btn_audio:hover {
+    opacity: 1;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
   .scroll_txt {
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
@@ -1021,6 +1061,19 @@
     height: 52.0833333333vw;
     -webkit-filter: unset;
             filter: unset;
+  }
+  .detail_page .contents_top .banner.video .btn_audio {
+    position: absolute;
+    top: 5.46875vw;
+    right: 5.46875vw;
+    width: 8.8541666667vw;
+    height: 8.8541666667vw;
+    opacity: 0.8;
+  }
+  .detail_page .contents_top .banner.video .btn_audio img {
+    width: 8.8541666667vw;
+    height: 8.8541666667vw;
+    display: none;
   }
   .detail_page .contents_top.tuna .banner {
     background-size: 150%;

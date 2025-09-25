@@ -42,6 +42,26 @@
                     left:0;
                     transform:translateY(-50%);
                 }
+                .btn_audio {
+                    position:absolute;
+                    top:40px;
+                    right:360px;
+                    width:56px;
+                    height:56px;
+                    cursor:pointer;
+                    display:flex; justify-content:center; align-items:center;
+                    z-index:10;
+                    background:transparent;
+                    transition:all .1s ease-in-out;
+                    opacity:.6;
+                    img { width:56px; height:56px; display:none; }
+                    &.is_muted{
+                        .icon_off{
+                            display:block;
+                        }
+                    }
+                    &:not(.is_muted) .icon_on { display:block; }
+                }
             }
         }
         .banner{
@@ -202,6 +222,12 @@
         &.alive{
             .logo{
                 background-image:url(../images/logo/takealive.png);
+                filter: brightness(0) invert(1);
+            }
+        }
+        &.thebanchan{
+            .logo{
+                background-image:url(../images/logo/thebanchan.png);
                 filter: brightness(0) invert(1);
             }
         }
@@ -404,7 +430,7 @@
                 height:1355px;
             }
             &.richam{
-                height:1895px;
+                height:1930px;
             }
             &.yangban{
                 height:1755px;
@@ -420,6 +446,9 @@
             }
             &.alive{
                 height:1133px;
+            }
+            &.thebanchan{
+                height:1155px;
             }
         }
         .box {
@@ -587,7 +616,20 @@
                         display:block;
                         color:#7E7E7E;
                         margin-top:12px;
+                        &.moret{
+                            margin-top:30px;
+                        }
                     }
+                }
+                .chip{
+                    display:inline-block;
+                    border:1px solid #999999;
+                    border-radius:60px;
+                    padding:4px 12px;
+                    font-size:18px;
+                    margin-right:8px;
+                    margin-top:12px;
+                    color:#7E7E7E;
                 }
             }
             .custom_pagination{
@@ -607,6 +649,9 @@
                         background:#111;
                         border-color:#111;
                     }
+                }
+                &.thebanchan{
+                    bottom:40px;
                 }
             }
         }
@@ -1054,6 +1099,22 @@
             }
         }
     }
+    &.thebanchan{
+        background:#ff7600;
+        .up_boxs{
+            .box{
+                &:nth-of-type(1){
+                    background-image:url(../images/thebanchan/point01.jpg);
+                }
+                &:nth-of-type(2){
+                    background-image:url(../images/thebanchan/point02.jpg);
+                }
+                &:nth-of-type(3){
+                    background-image:url(../images/thebanchan/point03.jpg);
+                }
+            }
+        }
+    }
 }
 #section5{
     padding:130px 0;
@@ -1129,6 +1190,10 @@
     .banner{
         transition:all .5s ease-in-out;
     }
+    .detail_page .contents_top .banner.video .btn_audio:hover{
+        opacity:1;
+        transition:all .1s ease-in-out;
+    }
     .scroll_txt{
         transition:all .2s ease;
     }
@@ -1185,4 +1250,20 @@
         display:block;
     }
 }
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 비율 (9/16*100) */
+  height: 0;
+  overflow: hidden;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events:none
+  }
+}
+
 @import './mobile/brand_common';
