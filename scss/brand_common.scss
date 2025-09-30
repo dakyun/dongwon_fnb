@@ -231,6 +231,16 @@
                 filter: brightness(0) invert(1);
             }
         }
+        &.nutriplan{
+            .logo{
+                background-image:url(../images/logo/nutriplan.png);
+            }
+        }
+        &.cheonjiin{
+            .logo{
+                background-image:url(../images/logo/cheonjiin.png);
+            }
+        }
     }
     .inner{
         width:1200px;
@@ -318,7 +328,7 @@
         align-items:center;
         column-gap:80px;
         margin-bottom:80px;
-        span{
+        span.br_pc{
             display:block;
         }
         &.n3{
@@ -449,6 +459,12 @@
             }
             &.thebanchan{
                 height:955px;
+            }
+            &.nutriplan{
+                height:1035px;
+            }
+            &.cheonjiin{
+                height:953px;
             }
         }
         .box {
@@ -1111,6 +1127,38 @@
                 }
                 &:nth-of-type(3){
                     background-image:url(../images/thebanchan/point03.jpg);
+                }
+            }
+        }
+    }
+    &.nutriplan{
+        background:#C5D6FB;
+        .up_boxs{
+            .box{
+                &:nth-of-type(1){
+                    background-image:url(../images/nutriplan/point01.jpg);
+                }
+                &:nth-of-type(2){
+                    background-image:url(../images/nutriplan/point02.jpg);
+                }
+                &:nth-of-type(3){
+                    background-image:url(../images/nutriplan/point03.jpg);
+                }
+            }
+        }
+    }
+    &.cheonjiin{
+        background:#DE4D59;
+        .up_boxs{
+            .box{
+                &:nth-of-type(1){
+                    background-image:url(../images/cheonjiin/point01.jpg);
+                }
+                &:nth-of-type(2){
+                    background-image:url(../images/cheonjiin/point02.jpg);
+                }
+                &:nth-of-type(3){
+                    background-image:url(../images/cheonjiin/point03.jpg);
                 }
             }
         }

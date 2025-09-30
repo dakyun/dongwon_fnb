@@ -1,0 +1,80 @@
+@import './mixin','./animation';
+$bp-mobile: 767px;
+
+.clips-swiper {
+  width: 100%;
+  margin:60px auto;
+
+  // PC 기본: 그리드 5열 고정
+  .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 15px;
+  }
+
+  // Swiper가 초기화되면 내부 레이아웃을 flex로 되돌림(모바일에서만)
+  &.swiper-initialized {
+    .swiper-wrapper {
+      display: flex;
+      gap: 0;
+    }
+  }
+
+  .swiper-slide {
+    // grid일 땐 무시되지만, 모바일 Swiper일 때 폭 제어는 JS 옵션이 담당
+    width: 228px;
+  }
+
+  .clip-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+
+    .video_box {
+      display: block;
+      width: 100%;
+      height:342px;
+      border-radius:8px;
+      overflow: hidden;
+      
+      img,
+      video {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+          pointer-events:none;
+      }
+    }
+
+    .title {
+      display: block;
+      margin-top: 14px;
+      font-size: 22px;
+      text-align: left;
+      color: #222;
+    }
+  }
+}
+
+// 모바일: Swiper 활성(스크립트가 init/destroy), 여백/폰트만 소폭 조정
+@media (max-width: $bp-mobile) {
+    .clips-swiper {
+        margin:px(60) auto;
+
+        .swiper-slide{
+            width:px(280);
+        }
+        .clip-card {
+          .video_box {
+            height:px(408);
+            border-radius:px(8); 
+          }
+      
+          .title {
+            margin-top: px(20);
+            font-size:px(26);
+          }
+        }
+      }
+}

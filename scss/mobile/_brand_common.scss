@@ -246,6 +246,12 @@
             &.thebanchan{
               height:px(1045); 
             }
+            &.nutriplan{
+              height:px(1015); 
+            }
+            &.cheonjiin{
+              height:px(895); 
+            }
           }
       
           .box {
@@ -314,7 +320,6 @@
     #section3 {
         padding: px(130) 0;
         overflow: hidden;
-      
         .marquee {
           margin-top: px(80);
           &.coolpics{
@@ -364,6 +369,9 @@
           &.thebanchan{
             padding-bottom:80%;
           }
+          &.cheonjiin{
+            padding-bottom:70%;
+          }
           &::after{
               display:none;
           }
@@ -385,6 +393,9 @@
                           margin-top:px(12);
                           &.thebanchan{
                             margin-top:px(20);
+                          }
+                          &.moret{
+                            margin-top:px(12);
                           }
                       }
                       .chip{
@@ -412,6 +423,10 @@
                   &.thebanchan{
                     bottom:unset;
                     top:px(1060);
+                  }
+                  &.cheonjiin{
+                    bottom:unset;
+                    top:px(960);
                   }
               }
           }
@@ -480,6 +495,9 @@
                 }
             }
           }
+      }
+      &.nutriplan{
+        padding-bottom:px(100);
       }
     }
     #section4 {
@@ -590,18 +608,11 @@
             }
           }
         }
-      
-        .more_btn {
-            @include fontmobile(28,400,#222,center);
-            width:px(480);
-            height:px(80);
-            line-height:px(80);
-      
-          &:hover {
-            background: #fff;
-            border-color: #333;
-            color: #222;
-          }
-        }
     }      
+    .more_btn {
+      @include fontmobile(28,400,#222,center);
+      width:px(480);
+      height:px(80);
+      line-height:px(80);
+    }
 }
